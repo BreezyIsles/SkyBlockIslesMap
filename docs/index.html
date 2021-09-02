@@ -267,12 +267,12 @@ function toggleSardine()
 	var sardine = document.getElementById("sardineButton")
 	if(map.hasLayer(sardineFlounderCod1))
 	{
-		sardine.style.background-color = 'red';
+		sardine.style.backgroundColor = 'red';
 		map.removeLayer(sardineFlounderCod1);		
 	}
 	else
 	{
-		sardine.style.background-color = 'white';
+		sardine.style.backgroundColor = 'white';
 		sardineFlounderCod1.addTo(map);
 	}
 }

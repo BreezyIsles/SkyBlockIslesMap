@@ -1,1 +1,3 @@
-# SkyBlockIslesMap
+---
+permalink: /index.html
+---

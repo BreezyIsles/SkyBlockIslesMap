@@ -5,10 +5,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="scripts/leaflet/leaflet.css">
+<link rel="stylesheet" href="islesmap/scripts/leaflet/leaflet.css">
 <link rel="stylesheet" href="buttons.css">
 
-<script src="scripts/leaflet/leaflet.js"></script>
+<script src="islesmap/scripts/leaflet/leaflet.js"></script>
 
 </head>
 <body style="height: 100%; margin: 0;">
@@ -44,12 +44,12 @@ var markerObj = L.Icon.extend({
     }
 });
 
-var altarMarker = new markerObj({iconUrl: 'scripts/leaflet/images/altarmarker.png'});
-var npcMarker = new markerObj({iconUrl: 'scripts/leaflet/images/npcmarker.png'});
-var farmingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/farmingmarker.png'});
-var miningMarker = new markerObj({iconUrl: 'scripts/leaflet/images/miningmarker.png'});
-var woodcuttingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/woodcuttingmarker.png'});
-var volcanoMarker = new markerObj({iconUrl: 'scripts/leaflet/images/volcanomarker.png'});
+var altarMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/altarmarker.png'});
+var npcMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/npcmarker.png'});
+var farmingMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/farmingmarker.png'});
+var miningMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/miningmarker.png'});
+var woodcuttingMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/woodcuttingmarker.png'});
+var volcanoMarker = new markerObj({iconUrl: 'islesmap/scripts/leaflet/images/volcanomarker.png'});
 var volcano = L.marker([-8.537565, -77.475586], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Pyre Pepper (35) : 63, 67, -1061<br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97').addTo(map)
 
 //                //

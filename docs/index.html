@@ -15,7 +15,11 @@
 
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
 
+//Fishing buttons
 <button id="fishingButton" onclick="toggleFishing()">Toggle Fishing</button>
+<button id="sardineButton" onclick="toggleSardine()">Sardine</button>
+	
+	
 <button id="altarButton" onclick="toggleAltar()">Toggle Altars</button>
 <button id="miningButton" onclick="toggleMining()">Toggle Mining</button>
 <button id="farmingButton" onclick="toggleFarming()">Toggle Farming</button>
@@ -191,6 +195,14 @@ var woodcuttingSpots = L.layerGroup([log1,
 
 function toggleFishing()
 {
+	var sardine = document.getElementByID(sardineButton)
+	if(sardine.style.display == 'block')
+	{
+		sardine.style.display = 'none';	
+	}else
+	{
+		sardine.style.display = 'block';	
+	}
 	if(map.hasLayer(fishingSpots))
 	{
 		map.removeLayer(fishingSpots);

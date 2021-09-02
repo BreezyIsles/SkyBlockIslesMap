@@ -198,14 +198,10 @@ function toggleFishing()
 	var sardine = document.getElementById("sardineButton")
 	if (sardine.style.display == 'flex')
 	{
-		alert("sardine should be hidden");
-		alert(sardine.style.display);
 		sardine.style.display = 'none';
 	}
 	else
 	{
-		alert("sardine is no longer hidden");
-		alert(sardine.style.display);
 		sardine.style.display = 'flex';	
 	}
 	if(map.hasLayer(fishingSpots))

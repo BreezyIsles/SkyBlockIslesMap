@@ -264,13 +264,13 @@ function toggleWoodcutting()
 
 function toggleSardine()
 {
-	if(sardineFlounderCod1 != undefined)
+	if(map.hasLayer(sardineFlounderCod1))
 	{
-		sardineFlounderCod1.addTo(map);
+		map.removeLayer(sardineFlounderCod1);		
 	}
 	else
 	{
-		map.removeLayer(sardineFlounderCod1);
+		sardineFlounderCod1.addTo(map);
 	}
 }
 

@@ -264,12 +264,15 @@ function toggleWoodcutting()
 
 function toggleSardine()
 {
+	var sardine = document.getElementById("sardineButton")
 	if(map.hasLayer(sardineFlounderCod1))
 	{
+		sardine.style.background-color = red;
 		map.removeLayer(sardineFlounderCod1);		
 	}
 	else
 	{
+		sardine.style.background-color = white;
 		sardineFlounderCod1.addTo(map);
 	}
 }

@@ -18,6 +18,7 @@
 //Fishing buttons
 <button id="fishingButton" onclick="toggleFishing()">Toggle Fishing</button>
 <button id="sardineButton" onclick="toggleSardine()">Sardine</button>
+<button id="wellButton" onclick="toggleWell()">Well</button>
 	
 	
 <button id="altarButton" onclick="toggleAltar()">Toggle Altars</button>
@@ -274,6 +275,21 @@ function toggleSardine()
 	{
 		sardine.style.backgroundColor = '#50C878';
 		sardineFlounderCod1.addTo(map);
+	}
+}
+	
+function toggleWell()
+{
+	var well = document.getElementById("wellButton")
+	if(map.hasLayer(wishingWell1))
+	{
+		well.style.backgroundColor = 'white';
+		map.removeLayer(wishingWell1);		
+	}
+	else
+	{
+		well.style.backgroundColor = '#50C878';
+		wishingWell1.addTo(map);
 	}
 }
 

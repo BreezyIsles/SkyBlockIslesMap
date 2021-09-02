@@ -20,6 +20,28 @@
     cursor: pointer;
 }
 
+#sardineButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#sardineButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #altarButton{
     display: flex;
     align-items: center;

@@ -196,12 +196,12 @@ var woodcuttingSpots = L.layerGroup([log1,
 function toggleFishing()
 {
 	var sardine = document.getElementById(sardineButton)
-	if(sardine.style.display == 'block')
+	if(sardine.style.display == 'flex')
 	{
 		sardine.style.display = 'none';	
 	}else
 	{
-		sardine.style.display = 'block';	
+		sardine.style.display = 'flex';	
 	}
 	if(map.hasLayer(fishingSpots))
 	{

@@ -13,18 +13,45 @@
 </head>
 <body style="height: 100%; margin: 0;">
 
+
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
 
-//Fishing buttons
+
 <button id="fishingButton" onclick="toggleFishing()">Toggle Fishing</button>
 <button id="sardineButton" onclick="toggleSardine()">Sardine</button>
 <button id="wellButton" onclick="toggleWell()">Well</button>
-	
-	
+<button id="flounderButton" onclick="toggleFlounder()">Flounder</button>
+<button id="codButton" onclick="toggleCod()">Cod</button>
+<button id="stoneClamButton" onclick="toggleStoneClam()">Stone Clam</button>
+<button id="squidButton" onclick="toggleSquid()">Squid</button>
+<button id="shrimpButton" onclick="toggleShrimp()">Shrimp</button>
+<button id="oysterButton" onclick="toggleOyster()">Oyster</button>	
+<button id="troutButton" onclick="toggleTrout()">Trout</button>
+<button id="salmonButton" onclick="toggleSalmon()">Salmon</button>
+<button id="tunaButton" onclick="toggleTuna()">Tuna</button>
+<button id="starfishButton" onclick="toggleStarfish()">Starfish</button>
+<button id="snakeButton" onclick="toggleSnake()">Sea Snake</button>
+<button id="stoneCrabButton" onclick="toggleStoneCrab()">Stone Crab</button>
+<button id="picklefishButton" onclick="togglePicklefish()">Picklefish</button>
+<button id="catfishButton" onclick="toggleCatfish()">Catfish</button>
+<button id="giantsnailButton" onclick="togglegiantSnail()">Giant Snail</button>
+<button id="clownfishButton" onclick="toggleClownfish()">Clownfish</button>
+<button id="seahorseButton" onclick="toggleSeahorse()">Seahorse</button>
+<button id="urchinButton" onclick="toggleUrchin()">Urchin</button>
+<button id="crabButton" onclick="toggleCrab()">Giant Crab</button>
+<button id="anglerButton" onclick="toggleAngler()">Anglerfish</button>
+<button id="seaturtleButton" onclick="toggleSeaturtle()">Seaturtle</button>
+<button id="pufferfishButton" onclick="togglePufferfish()">Pufferfish</button>
+<button id="mantarayButton" onclick="toggleMantaray()">Mantaray</button>
+<button id="jellyfishButton" onclick="toggleJellyfish()">Jellyfish</button>
+<button id="goliathButton" onclick="toggleGoliath()">Goliath Grouper</button>
+			
 <button id="altarButton" onclick="toggleAltar()">Toggle Altars</button>
 <button id="miningButton" onclick="toggleMining()">Toggle Mining</button>
 <button id="farmingButton" onclick="toggleFarming()">Toggle Farming</button>
 <button id="woodcuttingButton" onclick="toggleWoodcutting()">Toggle Woodcutting</button>
+
+
 
 <script type="text/javascript">
 
@@ -196,17 +223,96 @@ var woodcuttingSpots = L.layerGroup([log1,
 
 function toggleFishing()
 {
-	var sardine = document.getElementById("sardineButton"),
-	    well = document.getElementById("wellButton")
+	var fishing = document.getElementById("fishingButton"),
+		sardine = document.getElementById("sardineButton"),
+	    well = document.getElementById("wellButton"),
+	    flounder = document.getElementById("flounderButton"),
+	    cod = document.getElementById("codButton"),
+	    stoneClam = document.getElementById("stoneClamButton"),
+	    squid = document.getElementById("squidButton"),
+	    oyster = document.getElementById("oysterButton"),
+	    shrimp = document.getElementById("shrimpButton"),
+	    trout = document.getElementById("troutButton"),
+	    salmon = document.getElementById("salmonButton"),
+	    tuna = document.getElementById("tunaButton"),
+	    starfish =  document.getElementById("starfishButton"),
+	    snake = document.getElementById("snakeButton"),
+	    stoneCrab = document.getElementById("stoneCrabButton"),
+	    picklefish = document.getElementById("picklefishButton"),
+	    catfish = document.getElementById("catfishButton"),
+	    giantsnail = document.getElementById("giantsnailButton"),
+	    clownfish = document.getElementById("clownfishButton"),
+	    seahorse = document.getElementById("seahorseButton"),
+	    urchin = document.getElementById("urchinButton"),
+	    crab = document.getElementById("crabButton"),
+	    angler = document.getElementById("anglerButton"),
+	    seaturtle = document.getElementById("seaturtleButton"),
+	    pufferfish = document.getElementById("pufferfishButton"),
+	    mantaray = document.getElementById("mantarayButton"),
+	    jellyfish = document.getElementById("jellyfishButton"),
+	    goliath = document.getElementById("goliathButton")
 	if (sardine.style.display == 'flex')
 	{
+
+		flounder.style.display = 'none';
 		sardine.style.display = 'none';
 		well.style.display = 'none';
+		cod.style.display = 'none';
+		stoneClam.style.display = 'none';
+		squid.style.display = 'none';
+		oyster.style.display = 'none';
+		shrimp.style.display = 'none';
+		trout.style.display = 'none';
+		salmon.style.display = 'none';
+		tuna.style.display = 'none';
+		starfish.style.display = 'none';
+		snake.style.display = 'none';
+		stoneCrab.style.display = 'none';
+		picklefish.style.display = 'none';
+		catfish.style.display = 'none';
+		giantsnail.style.display = 'none';
+		clownfish.style.display = 'none';
+		seahorse.style.display = 'none';
+		urchin.style.display = 'none';
+		crab.style.display = 'none';
+		angler.style.display = 'none';
+		seaturtle.style.display = 'none';
+		pufferfish.style.display = 'none';
+		mantaray.style.display = 'none';
+		jellyfish.style.display = 'none';
+		goliath.style.display = 'none';
+		fishing.style.backgroundColor = 'white';
 	}
 	else
 	{
+		flounder.style.display = 'flex';
 		sardine.style.display = 'flex';	
 		well.style.display = 'flex';
+		cod.style.display = 'flex';
+		stoneClam.style.display = 'flex';
+		squid.style.display = 'flex';
+		oyster.style.display = 'flex';
+		shrimp.style.display = 'flex';
+		trout.style.display = 'flex';
+		salmon.style.display = 'flex';
+		tuna.style.display = 'flex';
+		starfish.style.display = 'flex';
+		snake.style.display = 'flex';
+		stoneCrab.style.display = 'flex';
+		picklefish.style.display = 'flex';
+		catfish.style.display = 'flex';
+		giantsnail.style.display = 'flex';
+		clownfish.style.display = 'flex';
+		seahorse.style.display = 'flex';
+		urchin.style.display = 'flex';
+		crab.style.display = 'flex';
+		angler.style.display = 'flex';
+		seaturtle.style.display = 'flex';
+		pufferfish.style.display = 'flex';
+		mantaray.style.display = 'flex';
+		jellyfish.style.display = 'flex';
+		goliath.style.display = 'flex';
+		fishing.style.backgroundColor = 'rgb(28, 172, 120)';
 	}
 	//if(map.hasLayer(fishingSpots))
 	//{
@@ -266,18 +372,260 @@ function toggleWoodcutting()
 	}
 }
 
-function toggleSardine()
+function toggleTuna()
 {
-	var sardine = document.getElementById("sardineButton")
-	if(map.hasLayer(sardineFlounderCod1))
+	var tunaB = document.getElementById("tunaButton")
+	if(map.hasLayer(tuna1))
 	{
-		sardine.style.backgroundColor = 'white';
-		map.removeLayer(sardineFlounderCod1);		
+		tunaB.style.backgroundColor = 'white';
+		map.removeLayer(tuna1);		
 	}
 	else
 	{
-		sardine.style.backgroundColor = '#50C878';
+		tunaB.style.backgroundColor = 'rgb(28,172,120)';
+		tuna1.addTo(map);
+	}
+}
+
+function toggleGoliath()
+{
+	var goliathB = document.getElementById("goliathButton")
+	if(map.hasLayer(goliathgrouper))
+	{
+		goliathB.style.backgroundColor = 'white';
+		map.removeLayer(goliathgrouper);		
+	}
+	else
+	{
+		goliathB.style.backgroundColor = 'rgb(28,172,120)';
+		goliathgrouper.addTo(map);
+	}
+}
+
+function toggleMantaray()
+{
+	var mantarayB = document.getElementById("mantarayButton")
+	if(map.hasLayer(mantaray))
+	{
+		mantarayB.style.backgroundColor = 'white';
+		map.removeLayer(mantaray);		
+	}
+	else
+	{
+		mantarayB.style.backgroundColor = 'rgb(28,172,120)';
+		mantaray.addTo(map);
+	}
+}
+
+function togglePufferfish()
+{
+	var pufferfishB = document.getElementById("pufferfishButton")
+	if(map.hasLayer(pufferfish))
+	{
+		pufferfishB.style.backgroundColor = 'white';
+		map.removeLayer(pufferfish);		
+	}
+	else
+	{
+		pufferfishB.style.backgroundColor = 'rgb(28,172,120)';
+		pufferfish.addTo(map);
+	}
+}
+
+
+function toggleJellyfish()
+{
+	var jellyfishB = document.getElementById("jellyfishButton")
+	if(map.hasLayer(jellyfish))
+	{
+		jellyfishB.style.backgroundColor = 'white';
+		map.removeLayer(jellyfish);		
+	}
+	else
+	{
+		jellyfishB.style.backgroundColor = 'rgb(28,172,120)';
+		jellyfish.addTo(map);
+	}
+}
+
+function toggleSeaturtle()
+{
+	var seaturtleB = document.getElementById("seaturtleButton")
+	if(map.hasLayer(seaturtle))
+	{
+		seaturtleB.style.backgroundColor = 'white';
+		map.removeLayer(seaturtle);		
+	}
+	else
+	{
+		seaturtleB.style.backgroundColor = 'rgb(28,172,120)';
+		seaturtle.addTo(map);
+	}
+}
+
+
+function toggleAngler()
+{
+	var anglerB = document.getElementById("anglerButton")
+	if(map.hasLayer(angler))
+	{
+		anglerB.style.backgroundColor = 'white';
+		map.removeLayer(angler);		
+	}
+	else
+	{
+		anglerB.style.backgroundColor = 'rgb(28,172,120)';
+		angler.addTo(map);
+	}
+}
+
+function togglegiantSnail()
+{
+	var giantsnailB = document.getElementById("giantsnailButton")
+	if(map.hasLayer(giantsnail))
+	{
+		giantsnailB.style.backgroundColor = 'white';
+		map.removeLayer(giantsnail);		
+	}
+	else
+	{
+		giantsnailB.style.backgroundColor = 'rgb(28,172,120)';
+		giantsnail.addTo(map);
+	}
+}
+
+function togglePicklefish()
+{
+	var picklefishB = document.getElementById("picklefishButton")
+	if(map.hasLayer(picklefish))
+	{
+		picklefishB.style.backgroundColor = 'white';
+		map.removeLayer(picklefish);		
+	}
+	else
+	{
+		picklefishB.style.backgroundColor = 'rgb(28,172,120)';
+		picklefish.addTo(map);
+	}
+}
+
+function toggleCatfish()
+{
+	var catfishB = document.getElementById("catfishButton")
+	if(map.hasLayer(catfish))
+	{
+		catfishB.style.backgroundColor = 'white';
+		map.removeLayer(catfish);		
+	}
+	else
+	{
+		catfishB.style.backgroundColor = 'rgb(28,172,120)';
+		catfish.addTo(map);
+	}
+}
+
+function toggleStoneCrab()
+{
+	var stoneCrabB = document.getElementById("stoneCrabButton")
+	if(map.hasLayer(stonecrab))
+	{
+		stoneCrabB.style.backgroundColor = 'white';
+		map.removeLayer(stonecrab);		
+	}
+	else
+	{
+		stoneCrabB.style.backgroundColor = 'rgb(28,172,120)';
+		stonecrab.addTo(map);
+	}
+}
+
+function toggleSardine()
+{
+	var sardine = document.getElementById("sardineButton")
+	flounderButtonColor = getComputedStyle(document.getElementById("flounderButton")).backgroundColor
+	sardineButtonColor = getComputedStyle(document.getElementById("sardineButton")).backgroundColor
+	codButtonColor = getComputedStyle(document.getElementById("codButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make sardine green and add layer
+	if(flounderButtonColor == 'rgb(255, 255, 255)' && sardineButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(sardineFlounderCod1) == false)
+	{
+		sardine.style.backgroundColor = 'rgb(28,172,120)';
 		sardineFlounderCod1.addTo(map);
+	}
+	//if maplayer exists and flounder is green, just make sardine green
+	if(map.hasLayer(sardineFlounderCod1))
+	{
+		sardine.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make sardine white
+	if(map.hasLayer(sardineFlounderCod1) && sardineButtonColor == 'rgb(28, 172, 120)' && codButtonColor == 'rgb(28, 172, 120)' || sardineButtonColor == 'rgb(28, 172, 120)' && flounderButtonColor == 'rgb(28, 172, 120)')
+	{
+		sardine.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, flounder is white, but sardine is green. Remove Layer.
+	if(map.hasLayer(sardineFlounderCod1) && codButtonColor == 'rgb(255, 255, 255)' && sardineButtonColor == 'rgb(28, 172, 120)' && flounderButtonColor == 'rgb(255, 255, 255)')
+	{
+		sardine.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(sardineFlounderCod1)
+	}
+}
+
+function toggleFlounder()
+{
+	var flounder = document.getElementById("flounderButton")
+	flounderButtonColor = getComputedStyle(document.getElementById("flounderButton")).backgroundColor
+	sardineButtonColor = getComputedStyle(document.getElementById("sardineButton")).backgroundColor
+	codButtonColor = getComputedStyle(document.getElementById("codButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(flounderButtonColor == 'rgb(255, 255, 255)' && sardineButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(sardineFlounderCod1) == false)
+	{
+		flounder.style.backgroundColor = 'rgb(28,172,120)';
+		sardineFlounderCod1.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(sardineFlounderCod1))
+	{
+		flounder.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(sardineFlounderCod1) && codButtonColor == 'rgb(28, 172, 120)' && flounderButtonColor == 'rgb(28, 172, 120)' || sardineButtonColor == 'rgb(28, 172, 120)' && flounderButtonColor == 'rgb(28, 172, 120)')
+	{
+		flounder.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(sardineFlounderCod1) && sardineButtonColor == 'rgb(255, 255, 255)' && flounderButtonColor == 'rgb(28, 172, 120)' && codButtonColor == 'rgb(255, 255, 255)')
+	{
+		flounder.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(sardineFlounderCod1)
+	}
+}
+
+function toggleCod()
+{
+	var cod = document.getElementById("codButton")
+	flounderButtonColor = getComputedStyle(document.getElementById("flounderButton")).backgroundColor
+	sardineButtonColor = getComputedStyle(document.getElementById("sardineButton")).backgroundColor
+	codButtonColor = getComputedStyle(document.getElementById("codButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(codButtonColor == 'rgb(255, 255, 255)' && sardineButtonColor == 'rgb(255, 255, 255)' || flounderButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(sardineFlounderCod1) == false)
+	{
+		cod.style.backgroundColor = 'rgb(28,172,120)';
+		sardineFlounderCod1.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(sardineFlounderCod1))
+	{
+		cod.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(sardineFlounderCod1) && flounderButtonColor == 'rgb(28, 172, 120)' && codButtonColor == 'rgb(28, 172, 120)' || sardineButtonColor == 'rgb(28, 172, 120)' && codButtonColor == 'rgb(28, 172, 120)')
+	{
+		cod.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(sardineFlounderCod1) && sardineButtonColor == 'rgb(255, 255, 255)' && codButtonColor == 'rgb(28, 172, 120)' && flounderButtonColor == 'rgb(255, 255, 255)')
+	{
+		cod.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(sardineFlounderCod1)
 	}
 }
 	
@@ -291,8 +639,307 @@ function toggleWell()
 	}
 	else
 	{
-		well.style.backgroundColor = '#50C878';
+		well.style.backgroundColor = 'rgb(28,172,120)';
 		wishingWell1.addTo(map);
+	}
+}
+
+function toggleTrout()
+{
+	var troutB = document.getElementById("troutButton")
+	if(map.hasLayer(trout))
+	{
+		troutB.style.backgroundColor = 'white';
+		map.removeLayer(trout);		
+	}
+	else
+	{
+		troutB.style.backgroundColor = 'rgb(28,172,120)';
+		trout.addTo(map);
+	}
+}
+
+
+function toggleStoneClam()
+{
+	var stoneClam = document.getElementById("stoneClamButton")
+	if(map.hasLayer(stoneClam1))
+	{
+		stoneClam.style.backgroundColor = 'white';
+		map.removeLayer(stoneClam1);		
+	}
+	else
+	{
+		stoneClam.style.backgroundColor = 'rgb(28,172,120)';
+		stoneClam1.addTo(map);
+	}
+}
+
+function toggleSalmon()
+{
+	var salmonB = document.getElementById("salmonButton")
+	if(map.hasLayer(salmon))
+	{
+		salmonB.style.backgroundColor = 'white';
+		map.removeLayer(salmon);		
+	}
+	else
+	{
+		salmonB.style.backgroundColor = 'rgb(28,172,120)';
+		salmon.addTo(map);
+	}
+}
+
+function toggleSquid()
+{
+	var squid = document.getElementById("squidButton")
+	if(map.hasLayer(squidMarker1))
+	{
+		squid.style.backgroundColor = 'white';
+		map.removeLayer(squidMarker1);		
+	}
+	else
+	{
+		squid.style.backgroundColor = 'rgb(28,172,120)';
+		squidMarker1.addTo(map);
+	}
+}
+
+function toggleOyster()
+{
+	var oyster = document.getElementById("oysterButton")
+	oysterButtonColor = getComputedStyle(document.getElementById("oysterButton")).backgroundColor
+	shrimpButtonColor = getComputedStyle(document.getElementById("shrimpButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(oysterButtonColor == 'rgb(255, 255, 255)' && shrimpButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(shrimpOyster1) == false)
+	{
+		oyster.style.backgroundColor = 'rgb(28,172,120)';
+		shrimpOyster1.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(shrimpOyster1))
+	{
+		oyster.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(shrimpOyster1) && oysterButtonColor == 'rgb(28, 172, 120)' && shrimpButtonColor == 'rgb(28, 172, 120)')
+	{
+		oyster.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(shrimpOyster1) && shrimpButtonColor == 'rgb(255, 255, 255)' && oysterButtonColor == 'rgb(28, 172, 120)')
+	{
+		oyster.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(shrimpOyster1)
+	}
+}
+
+function toggleShrimp()
+{
+	var shrimp = document.getElementById("shrimpButton")
+	oysterButtonColor = getComputedStyle(document.getElementById("oysterButton")).backgroundColor
+	shrimpButtonColor = getComputedStyle(document.getElementById("shrimpButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(shrimpButtonColor == 'rgb(255, 255, 255)' && oysterButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(shrimpOyster1) == false)
+	{
+		shrimp.style.backgroundColor = 'rgb(28,172,120)';
+		shrimpOyster1.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(shrimpOyster1))
+	{
+		shrimp.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(shrimpOyster1) && shrimpButtonColor == 'rgb(28, 172, 120)' && oysterButtonColor == 'rgb(28, 172, 120)')
+	{
+		shrimp.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(shrimpOyster1) && oysterButtonColor == 'rgb(255, 255, 255)' && shrimpButtonColor == 'rgb(28, 172, 120)')
+	{
+		shrimp.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(shrimpOyster1)
+	}
+}
+
+
+function toggleClownfish()
+{
+	var clownfish = document.getElementById("clownfishButton")
+	clownfishButtonColor = getComputedStyle(document.getElementById("clownfishButton")).backgroundColor
+	seahorseButtonColor = getComputedStyle(document.getElementById("seahorseButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(clownfishButtonColor == 'rgb(255, 255, 255)' && seahorseButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(clownfishseahorse) == false)
+	{
+		clownfish.style.backgroundColor = 'rgb(28,172,120)';
+		clownfishseahorse.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(clownfishseahorse))
+	{
+		clownfish.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(clownfishseahorse) && clownfishButtonColor == 'rgb(28, 172, 120)' && seahorseButtonColor == 'rgb(28, 172, 120)')
+	{
+		clownfish.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(clownfishseahorse) && seahorseButtonColor == 'rgb(255, 255, 255)' && clownfishButtonColor == 'rgb(28, 172, 120)')
+	{
+		clownfish.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(clownfishseahorse)
+	}
+}
+
+function toggleSeahorse()
+{
+	var seahorse = document.getElementById("seahorseButton")
+	clownfishButtonColor = getComputedStyle(document.getElementById("clownfishButton")).backgroundColor
+	seahorseButtonColor = getComputedStyle(document.getElementById("seahorseButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(seahorseButtonColor == 'rgb(255, 255, 255)' && clownfishButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(clownfishseahorse) == false)
+	{
+		seahorse.style.backgroundColor = 'rgb(28,172,120)';
+		clownfishseahorse.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(clownfishseahorse))
+	{
+		seahorse.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(clownfishseahorse) && seahorseButtonColor == 'rgb(28, 172, 120)' && clownfishButtonColor == 'rgb(28, 172, 120)')
+	{
+		seahorse.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(clownfishseahorse) && clownfishButtonColor == 'rgb(255, 255, 255)' && seahorseButtonColor == 'rgb(28, 172, 120)')
+	{
+		seahorse.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(clownfishseahorse)
+	}
+}
+
+
+
+
+
+function toggleStarfish()
+{
+	var starfishB = document.getElementById("starfishButton")
+	starfishButtonColor = getComputedStyle(document.getElementById("starfishButton")).backgroundColor
+	snakeButtonColor = getComputedStyle(document.getElementById("snakeButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(starfishButtonColor == 'rgb(255, 255, 255)' && snakeButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(starfishsnake) == false)
+	{
+		starfishB.style.backgroundColor = 'rgb(28,172,120)';
+		starfishsnake.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(starfishsnake))
+	{
+		starfishB.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(starfishsnake) && snakeButtonColor == 'rgb(28, 172, 120)' && starfishButtonColor == 'rgb(28, 172, 120)')
+	{
+		starfishB.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(starfishsnake) && snakeButtonColor == 'rgb(255, 255, 255)' && starfishButtonColor == 'rgb(28, 172, 120)')
+	{
+		starfishB.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(starfishsnake)
+	}
+}
+
+function toggleSnake()
+{
+	var snakeB = document.getElementById("snakeButton")
+	starfishButtonColor = getComputedStyle(document.getElementById("starfishButton")).backgroundColor
+	snakeButtonColor = getComputedStyle(document.getElementById("snakeButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(snakeButtonColor == 'rgb(255, 255, 255)' && starfishButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(starfishsnake) == false)
+	{
+		snakeB.style.backgroundColor = 'rgb(28,172,120)';
+		starfishsnake.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(starfishsnake))
+	{
+		snakeB.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(starfishsnake) && starfishButtonColor == 'rgb(28, 172, 120)' && snakeButtonColor == 'rgb(28, 172, 120)')
+	{
+		snakeB.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(starfishsnake) && starfishButtonColor == 'rgb(255, 255, 255)' && snakeButtonColor == 'rgb(28, 172, 120)')
+	{
+		snakeB.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(starfishsnake)
+	}
+}
+
+
+function toggleUrchin()
+{
+	var urchinB = document.getElementById("urchinButton")
+	urchinButtonColor = getComputedStyle(document.getElementById("urchinButton")).backgroundColor
+	crabButtonColor = getComputedStyle(document.getElementById("crabButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(urchinButtonColor == 'rgb(255, 255, 255)' && urchinButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(urchincrab) == false)
+	{
+		urchinB.style.backgroundColor = 'rgb(28,172,120)';
+		urchincrab.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(urchincrab))
+	{
+		urchinB.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(urchincrab) && crabButtonColor == 'rgb(28, 172, 120)' && urchinButtonColor == 'rgb(28, 172, 120)')
+	{
+		urchinB.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(urchincrab) && crabButtonColor == 'rgb(255, 255, 255)' && urchinButtonColor == 'rgb(28, 172, 120)')
+	{
+		urchinB.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(urchincrab)
+	}
+}
+
+function toggleCrab()
+{
+	var crabB = document.getElementById("crabButton")
+	urchinButtonColor = getComputedStyle(document.getElementById("urchinButton")).backgroundColor
+	crabButtonColor = getComputedStyle(document.getElementById("crabButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(urchinButtonColor == 'rgb(255, 255, 255)' && crabButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(urchincrab) == false)
+	{
+		crabB.style.backgroundColor = 'rgb(28,172,120)';
+		urchincrab.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(urchincrab))
+	{
+		crabB.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(urchincrab) && urchinButtonColor == 'rgb(28, 172, 120)' && crabButtonColor == 'rgb(28, 172, 120)')
+	{
+		crabB.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(urchincrab) && urchinButtonColor == 'rgb(255, 255, 255)' && crabButtonColor == 'rgb(28, 172, 120)')
+	{
+		crabB.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(urchincrab)
 	}
 }
 

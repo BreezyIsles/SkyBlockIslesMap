@@ -25,7 +25,7 @@
     align-items: center;
     position: absolute;
     top: 100px;
-    left: 150px;
+    left: 290px;
     width: 131px;
     height: 25px;
     background-color: white;
@@ -42,12 +42,100 @@
     cursor: pointer;
 }
 
+#jellyfishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#jellyfishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#goliathButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#goliathButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#flounderButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#flounderButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#codButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#codButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #wellButton{
     display: none;
     align-items: center;
     position: absolute;
     top: 100px;
-    left: 200px;
+    left: 150px;
     width: 131px;
     height: 25px;
     background-color: white;
@@ -63,6 +151,472 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+#stoneCrabButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#stoneCrabButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#picklefishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#picklefishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#pufferfishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#pufferfishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#mantarayButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#mantarayButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#catfishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#catfishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#clownfishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#clownfishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#seahorseButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#seahorseButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#seaturtleButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#seaturtleButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+#anglerButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#anglerButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#crabButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#crabButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#urchinButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#urchinButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#snakeButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#snakeButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#stoneClamButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#stoneClamButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#giantsnailButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#giantsnailButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+#squidButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#squidButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#troutButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#troutButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#salmonButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 150px;;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#salmonButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#oysterButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#oysterButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#shrimpButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#shrimpButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#tunaButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#tunaButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#starfishButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#starfishButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 
 #altarButton{
     display: flex;

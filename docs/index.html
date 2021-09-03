@@ -46,9 +46,53 @@
 <button id="jellyfishButton" onclick="toggleJellyfish()">Jellyfish</button>
 <button id="goliathButton" onclick="toggleGoliath()">Goliath Grouper</button>
 			
+
+
 <button id="altarButton" onclick="toggleAltar()">Toggle Altars</button>
+<button id="airButton" onclick="toggleAir()">Air</button>
+<button id="apprenticeButton" onclick="toggleApprentice()">Cosmic/Apprentice</button>
+<button id="earthButton" onclick="toggleEarth()">Earth</button>
+<button id="waterButton" onclick="toggleWater()">Water</button>
+<button id="darkButton" onclick="toggleDark()">Dark</button>
+<button id="dreamButton" onclick="toggleDream()">Dream</button>
+<button id="bloodButton" onclick="toggleBlood()">Blood</button>
+<button id="alchemyButton" onclick="toggleAlchemy()">Alchemy Table</button>
+<button id="enchantmentButton" onclick="toggleEnchantment()">Enchantment Table</button>
+
+
 <button id="miningButton" onclick="toggleMining()">Toggle Mining</button>
+<button id="copperButton" onclick="toggleCopper()">Copper</button>
+<button id="tinButton" onclick="toggleTin()">Tin</button>
+<button id="clayButton" onclick="toggleClay()">Clay</button>
+<button id="ironButton" onclick="toggleIron()">Iron</button>
+<button id="sandButton" onclick="toggleSand()">Sand</button>
+<button id="runeButton" onclick="toggleRune()">Rune Essence</button>
+<button id="coalButton" onclick="toggleCoal()">Coal</button>
+<button id="nickelButton" onclick="toggleNickel()">Nickel</button>
+<button id="silverButton" onclick="toggleSilver()">Silver</button>
+<button id="rhodoniteButton" onclick="toggleRhodonite()">Rhodonite</button>
+<button id="saltButton" onclick="toggleSalt()">Salt</button>
+<button id="mithrilButton" onclick="toggleMithril()">Mithril</button>
+<button id="iceButton" onclick="toggleIce()">Ice</button>
+<button id="adamantiumButton" onclick="toggleAdamantium()">Adamantium</button>
+<button id="goldButton" onclick="toggleGold()">Gold</button>
+<button id="crimsonButton" onclick="toggleCrimson()">Crimson</button>
+
+
+
 <button id="farmingButton" onclick="toggleFarming()">Toggle Farming</button>
+<button id="logButton" onclick="toggleLog()">Log</button>
+<button id="birchButton" onclick="toggleBirch()">Birch</button>
+<button id="oakButton" onclick="toggleOak()">Oak</button>
+<button id="spruceButton" onclick="toggleSpruce()">Spruce</button>
+<button id="willowButton" onclick="toggleWillow()">Willow</button>
+<button id="acaciaButton" onclick="toggleAcacia()">Acacia</button>
+<button id="dreadknotButton" onclick="toggleDreadknot()">Dreadknot</button>
+<button id="mahoganyButton" onclick="toggleMahogany()">Mahogany</button>
+<button id="baobabButton" onclick="toggleBaobab()">Baobab</button>
+<button id="bedlamButton" onclick="toggleBedlam()">Bedlam</button>
+
+
 <button id="woodcuttingButton" onclick="toggleWoodcutting()">Toggle Woodcutting</button>
 
 
@@ -91,45 +135,45 @@ var wishingWell1 = L.marker([-36.438961, -10.546875]).bindPopup('<b>Wishing Well
 	squidMarker1 = L.marker([-40.279526, -6.745605]).bindPopup('<b>Squid - Spear (23)</b>'),
 	shrimpOyster1 = L.marker([-40.313043, -11.228027]).bindPopup('<b>Shrimp - Net (8) <br>Oyster - Net (15)</b>'),
 	sardineFlounderCod1 = L.marker([-36.527295, -0.043945]).bindPopup('<b>Sardine - Net (1) <br>Flounder - Rod (3)<br>Cod - Rod (12)'),
-	trout = L.marker([-19.331878, 41.638184]).bindPopup('<b>Trout - Hand (18)</b>'),
-	salmon = L.marker([5.57225, 56.57959]).bindPopup('<b>Salmon - Rod (27)</b>'),
+	trout1 = L.marker([-19.331878, 41.638184]).bindPopup('<b>Trout - Hand (18)</b>'),
+	salmon1 = L.marker([5.57225, 56.57959]).bindPopup('<b>Salmon - Rod (27)</b>'),
 	stoneClam1 = L.marker([3.425692, 37.155762]).bindPopup('<b>Stone Clam - Net (5)</b>'),
 	tuna1 = L.marker([10.422988, 8.393555]).bindPopup('<b>Tuna - Rod (50)</b>'),
 	starfishsnake = L.marker([15.135764, 17.182617]).bindPopup('<b>Starfish - Net (43)<br>Sea Snake - Rod (48)</b>'),
 	stonecrab = L.marker([17.014768, 46.999512]).bindPopup('<b>Stone Crab - Net (10)</b>'),
-	picklefish = L.marker([-14.392118, 17.29248]).bindPopup('<b>Picklefish - Rod (20)</b>'),
-	catfish = L.marker([10.617418, 59.282227]).bindPopup('<b>Catfish - Hand (33)</b>'),
-	giantsnail= L.marker([27.664069, 23.532715]).bindPopup('<b>Giant Snail - Spear (45)</b>'),
+	picklefish1 = L.marker([-14.392118, 17.29248]).bindPopup('<b>Picklefish - Rod (20)</b>'),
+	catfish1 = L.marker([10.617418, 59.282227]).bindPopup('<b>Catfish - Hand (33)</b>'),
+	giantsnail1 = L.marker([27.664069, 23.532715]).bindPopup('<b>Giant Snail - Spear (45)</b>'),
 	clownfishseahorse= L.marker([24.866503, 39.858398]).bindPopup('<b>Clownfish - Rod (30)<br>Seahorse - Net (39)</b>'),
-	urchincrab= L.marker([25.720735, 43.92334]).bindPopup('<b>Urchin - Net (36)<br>Giant Crab - Spear (55)</b>'),
-	angler= L.marker([3.469557, -62.775879]).bindPopup('<b>Anglerfish - Net (70)</b>'),
-	seaturtle= L.marker([36.914764, 44.934082]).bindPopup('<b>Sea Turtle - Rod (59)</b>'),
-	pufferfish= L.marker([-16.551962, -84.331055]).bindPopup('<b>Pufferfish - Spear (40)</b>'),
-	mantaray= L.marker([-25.085599, -45.856934]).bindPopup('<b>Manta Ray - Spear (65)</b>'),
-	jellyfish= L.marker([4.149201, -69.851074]).bindPopup('<b>Jellyfish - Net (68)</b>'),
-	goliathgrouper= L.marker([-1.34021, 43.637695]).bindPopup('<b>Goliath Grouper - Hand (73)</b>')
+	urchincrab = L.marker([25.720735, 43.92334]).bindPopup('<b>Urchin - Net (36)<br>Giant Crab - Spear (55)</b>'),
+	angler1 = L.marker([3.469557, -62.775879]).bindPopup('<b>Anglerfish - Net (70)</b>'),
+	seaturtle1 = L.marker([36.914764, 44.934082]).bindPopup('<b>Sea Turtle - Rod (59)</b>'),
+	pufferfish1 = L.marker([-16.551962, -84.331055]).bindPopup('<b>Pufferfish - Spear (40)</b>'),
+	mantaray1 = L.marker([-25.085599, -45.856934]).bindPopup('<b>Manta Ray - Spear (65)</b>'),
+	jellyfish1 = L.marker([4.149201, -69.851074]).bindPopup('<b>Jellyfish - Net (68)</b>'),
+	goliathgrouper = L.marker([-1.34021, 43.637695]).bindPopup('<b>Goliath Grouper - Hand (73)</b>')
 
 
 var fishingSpots = L.layerGroup([wishingWell1, 
 	squidMarker1, 
 	shrimpOyster1,
 	sardineFlounderCod1,
-	trout,
-	salmon,
+	trout1,
+	salmon1,
 	stoneClam1,
 	tuna1,
 	starfishsnake,
 	stonecrab,
-	picklefish,
-	catfish,
-	giantsnail,
+	picklefish1,
+	catfish1,
+	giantsnail1,
 	clownfishseahorse,
 	urchincrab,
-	angler,
-	seaturtle,
-	pufferfish,
-	mantaray,
-	jellyfish,
+	angler1,
+	seaturtle1,
+	pufferfish1,
+	mantaray1,
+	jellyfish1,
 	goliathgrouper])
 
 //                //
@@ -142,7 +186,8 @@ var cosmicAltar = L.marker([4.017699, 32.958984], {icon: altarMarker}).bindPopup
 	earthAltar = L.marker([4.149201, 86.484375], {icon: altarMarker}).bindPopup('<b>Earth Altar (8)</b>'),
 	dreamAltar = L.marker([42.065607, 13.557129], {icon: altarMarker}).bindPopup('<b>Dream Altar (20)</b><br>Inside the back of the mountain'),
 	bloodAltar = L.marker([2.899153, -62.841797], {icon: altarMarker}).bindPopup('<b>Blood Altar (35)</b><br>Under monkey temple'),
-	enchantmentTable = L.marker([1.34021, 24.213867], {icon: altarMarker}).bindPopup('<b>Enchantment Table</b>')
+	alchemyTable = L.marker([1.34021, 24.213867], {icon: altarMarker}).bindPopup('<b>Alchemy Table</b>')
+	enchantmentTable = L.marker([-2.723583, 4.768066], {icon: altarMarker}).bindPopup('<b>Enchantment Table</b>')
 
 var altarSpots = L.layerGroup([cosmicAltar,
 	airAltar,
@@ -151,37 +196,38 @@ var altarSpots = L.layerGroup([cosmicAltar,
 	earthAltar,
 	dreamAltar,
 	bloodAltar,
+	alchemyTable,
 	enchantmentTable
 	])
 
 //                //
 // Mining Markers //
 //                //
-var copper = L.marker([-20.097206, -21.862793], {icon: miningMarker}).bindPopup('<b>Copper (1)</b>'),
-	tin = L.marker([-20.715015, -24.873047], {icon: miningMarker}).bindPopup('<b>Tin (1)</b>'),
-	salt = L.marker([-20.653346, 25.224609], {icon: miningMarker}).bindPopup('<b>Salt (23)</b>'),
-	clay = L.marker([-20.324024, 27.333984], {icon: miningMarker}).bindPopup('<b>Clay (3)</b>'),
+var copper1 = L.marker([-20.097206, -21.862793], {icon: miningMarker}).bindPopup('<b>Copper (1)</b>'),
+	tin1 = L.marker([-20.715015, -24.873047], {icon: miningMarker}).bindPopup('<b>Tin (1)</b>'),
+	salt1 = L.marker([-20.653346, 25.224609], {icon: miningMarker}).bindPopup('<b>Salt (23)</b>'),
+	clay1 = L.marker([-20.324024, 27.333984], {icon: miningMarker}).bindPopup('<b>Clay (3)</b>'),
 	coalironmithril = L.marker([-17.539297, -24.411621], {icon: miningMarker}).bindPopup('<b>Coal (12)<br>Iron (5)<br>Mithril (30)</b>'),
-	sand = L.marker([-0.109863, -4.152832], {icon: miningMarker}).bindPopup('<b>Sand (8)</b>'),
-	runeEssence = L.marker([-12.01783, 23.620605], {icon: miningMarker}).bindPopup('<b>Rune Essence (10)</b>'),
-	nicklerhodonite = L.marker([-9.579084, 5.756836], {icon: miningMarker}).bindPopup('<b>Nickel (15)<br>Rhodonite (20)</b>'),
+	sand1 = L.marker([-0.109863, -4.152832], {icon: miningMarker}).bindPopup('<b>Sand (8)</b>'),
+	runeEssence1 = L.marker([-12.01783, 23.620605], {icon: miningMarker}).bindPopup('<b>Rune Essence (10)</b>'),
+	nickelrhodonite = L.marker([-9.579084, 5.756836], {icon: miningMarker}).bindPopup('<b>Nickel (15)<br>Rhodonite (20)</b>'),
 	silvergold = L.marker([25.065697, -10.019531], {icon: miningMarker}).bindPopup('<b>Silver (18)<br>Gold (40)</b>'),
-	ice = L.marker([-12.039321, -6.108398], {icon: miningMarker}).bindPopup('<b>Ice (35)</b>'),
-	crimson = L.marker([-14.881087, -69.279785], {icon: miningMarker}).bindPopup('<b>Crimson (45)</b>'),
-	adamantium = L.marker([1.230374, 57.458496], {icon: miningMarker}).bindPopup('<b>Adamantium (40)</b>')
+	ice1 = L.marker([-12.039321, -6.108398], {icon: miningMarker}).bindPopup('<b>Ice (35)</b>'),
+	crimson1 = L.marker([-14.881087, -69.279785], {icon: miningMarker}).bindPopup('<b>Crimson (45)</b>'),
+	adamantium1 = L.marker([1.230374, 57.458496], {icon: miningMarker}).bindPopup('<b>Adamantium (40)</b>')
 
-var miningSpots = L.layerGroup([copper,
-	tin,
-	salt,
-	clay,
+var miningSpots = L.layerGroup([copper1,
+	tin1,
+	salt1,
+	clay1,
 	coalironmithril,
-	sand,
-	runeEssence,
-	nicklerhodonite,
+	sand1,
+	runeEssence1,
+	nickelrhodonite,
 	silvergold,
-	ice,
-	crimson,
-	adamantium
+	ice1,
+	crimson1,
+	adamantium1
 	])
 
 //                //
@@ -221,9 +267,7 @@ var woodcuttingSpots = L.layerGroup([log1,
 	bedlam1
 	])
 
-function toggleFishing()
-{
-	var fishing = document.getElementById("fishingButton"),
+var fishing = document.getElementById("fishingButton"),
 		sardine = document.getElementById("sardineButton"),
 	    well = document.getElementById("wellButton"),
 	    flounder = document.getElementById("flounderButton"),
@@ -251,6 +295,55 @@ function toggleFishing()
 	    mantaray = document.getElementById("mantarayButton"),
 	    jellyfish = document.getElementById("jellyfishButton"),
 	    goliath = document.getElementById("goliathButton")
+
+var altar = document.getElementById("altarButton"),
+		air = document.getElementById("airButton"),
+		apprentice = document.getElementById("apprenticeButton"),
+		earth = document.getElementById("earthButton"),
+		water = document.getElementById("waterButton"),
+		dark = document.getElementById("darkButton"),
+		dream = document.getElementById("dreamButton"),
+		blood = document.getElementById("bloodButton"),
+		alchemy = document.getElementById("alchemyButton"),
+		enchantment = document.getElementById("enchantmentButton")
+
+var mining = document.getElementById("miningButton"),
+		copper = document.getElementById("copperButton"),
+		tin = document.getElementById("tinButton"),
+		clay = document.getElementById("clayButton"),
+		iron = document.getElementById("ironButton"),
+		sand = document.getElementById("sandButton"),
+		rune = document.getElementById("runeButton"),
+		coal = document.getElementById("coalButton"),
+		nickel = document.getElementById("nickelButton"),
+		silver = document.getElementById("silverButton"),
+		rhodonite = document.getElementById("rhodoniteButton"),
+		salt = document.getElementById("saltButton"),
+		mithril = document.getElementById("mithrilButton"),
+		ice = document.getElementById("iceButton"),
+		granite = document.getElementById("graniteButton"),
+		adamantium = document.getElementById("adamantiumButton"),
+		gold = document.getElementById("goldButton"),
+		crimson = document.getElementById("crimsonButton"),
+		obsidian = document.getElementById("obsidianButton"),
+		netherite = document.getElementById("netheriteButton")
+
+var woodcutting = document.getElementById("woodcuttingButton"),
+		log = document.getElementById("logButton"),
+		birch = document.getElementById("birchButton"),
+		oak = document.getElementById("oakButton"),
+		spruce = document.getElementById("spruceButton"),
+		willow = document.getElementById("willowButton"),
+		acacia = document.getElementById("acaciaButton"),
+		dreadknot = document.getElementById("dreadknotButton"),
+		mahogany = document.getElementById("mahoganyButton"),
+		baobab = document.getElementById("baobabButton"),
+		bedlam = document.getElementById("bedlamButton")
+
+
+function toggleFishing()
+{
+
 	if (sardine.style.display == 'flex')
 	{
 
@@ -313,6 +406,50 @@ function toggleFishing()
 		jellyfish.style.display = 'flex';
 		goliath.style.display = 'flex';
 		fishing.style.backgroundColor = 'rgb(28, 172, 120)';
+
+		air.style.display = 'none';
+		apprentice.style.display = 'none';
+		earth.style.display = 'none';
+		water.style.display = 'none';
+		dark.style.display = 'none';
+		dream.style.display = 'none';
+		blood.style.display = 'none';
+		alchemy.style.display = 'none';
+		enchantment.style.display = 'none';
+		altar.style.backgroundColor = 'rgb(255, 255, 255)';
+
+		copper.style.display = 'none';
+		tin.style.display = 'none';
+		clay.style.display = 'none';
+		iron.style.display = 'none';
+		sand.style.display = 'none';
+		rune.style.display = 'none';
+		coal.style.display = 'none';
+		nickel.style.display = 'none';
+		silver.style.display = 'none';
+		rhodonite.style.display = 'none';
+		salt.style.display = 'none';
+		mithril.style.display = 'none';
+		ice.style.display = 'none';
+		adamantium.style.display = 'none';
+		gold.style.display = 'none';
+		crimson.style.display = 'none';
+
+
+		mining.style.backgroundColor = 'white';
+
+		log.style.display = 'none';
+		birch.style.display = 'none';
+		oak.style.display = 'none';
+		spruce.style.display = 'none';
+		willow.style.display = 'none';
+		acacia.style.display = 'none';
+		dreadknot.style.display = 'none';
+		mahogany.style.display = 'none';
+		baobab.style.display = 'none';
+		bedlam.style.display = 'none';
+
+		woodcutting.style.backgroundColor = 'white';
 	}
 	//if(map.hasLayer(fishingSpots))
 	//{
@@ -326,27 +463,687 @@ function toggleFishing()
 
 function toggleAltar()
 {
-	if(map.hasLayer(altarSpots))
+	if (air.style.display == 'flex')
 	{
-		map.removeLayer(altarSpots);
+		air.style.display = 'none';
+		apprentice.style.display = 'none';
+		earth.style.display = 'none';
+		water.style.display = 'none';
+		dark.style.display = 'none';
+		dream.style.display = 'none';
+		blood.style.display = 'none';
+		alchemy.style.display = 'none';
+		enchantment.style.display = 'none';
+
+		altar.style.backgroundColor = 'white';
 	}
 	else
 	{
-		map.addLayer(altarSpots);
+		air.style.display = 'flex';
+		apprentice.style.display = 'flex';
+		earth.style.display = 'flex';
+		water.style.display = 'flex';
+		dark.style.display = 'flex';
+		dream.style.display = 'flex';
+		blood.style.display = 'flex';
+		alchemy.style.display = 'flex';
+		enchantment.style.display = 'flex';
+
+		altar.style.backgroundColor = 'rgb(28, 172, 120)';
+
+		//fishing
+		flounder.style.display = 'none';
+		sardine.style.display = 'none';
+		well.style.display = 'none';
+		cod.style.display = 'none';
+		stoneClam.style.display = 'none';
+		squid.style.display = 'none';
+		oyster.style.display = 'none';
+		shrimp.style.display = 'none';
+		trout.style.display = 'none';
+		salmon.style.display = 'none';
+		tuna.style.display = 'none';
+		starfish.style.display = 'none';
+		snake.style.display = 'none';
+		stoneCrab.style.display = 'none';
+		picklefish.style.display = 'none';
+		catfish.style.display = 'none';
+		giantsnail.style.display = 'none';
+		clownfish.style.display = 'none';
+		seahorse.style.display = 'none';
+		urchin.style.display = 'none';
+		crab.style.display = 'none';
+		angler.style.display = 'none';
+		seaturtle.style.display = 'none';
+		pufferfish.style.display = 'none';
+		mantaray.style.display = 'none';
+		jellyfish.style.display = 'none';
+		goliath.style.display = 'none';
+		fishing.style.backgroundColor = 'rgb(255, 255, 255)';
+
+		copper.style.display = 'none';
+		tin.style.display = 'none';
+		clay.style.display = 'none';
+		iron.style.display = 'none';
+		sand.style.display = 'none';
+		rune.style.display = 'none';
+		coal.style.display = 'none';
+		nickel.style.display = 'none';
+		silver.style.display = 'none';
+		rhodonite.style.display = 'none';
+		salt.style.display = 'none';
+		mithril.style.display = 'none';
+		ice.style.display = 'none';
+		adamantium.style.display = 'none';
+		gold.style.display = 'none';
+		crimson.style.display = 'none';
+
+
+		mining.style.backgroundColor = 'white';
+
+		log.style.display = 'none';
+		birch.style.display = 'none';
+		oak.style.display = 'none';
+		spruce.style.display = 'none';
+		willow.style.display = 'none';
+		acacia.style.display = 'none';
+		dreadknot.style.display = 'none';
+		mahogany.style.display = 'none';
+		baobab.style.display = 'none';
+		bedlam.style.display = 'none';
+
+		woodcutting.style.backgroundColor = 'white';
+
+	}
+
+	//if(map.hasLayer(altarSpots))
+	//{
+	//	map.removeLayer(altarSpots);
+	//}
+	//else
+	//{
+	//	map.addLayer(altarSpots);
+	//}
+}
+
+function toggleAir()
+{
+	var airB = document.getElementById("airButton")
+	if(map.hasLayer(airAltar))
+	{
+		airB.style.backgroundColor = 'white';
+		map.removeLayer(airAltar);		
+	}
+	else
+	{
+		airB.style.backgroundColor = 'rgb(28,172,120)';
+		airAltar.addTo(map);
+	}
+}
+
+function toggleApprentice()
+{
+	var apprenticeB = document.getElementById("apprenticeButton")
+	if(map.hasLayer(cosmicAltar))
+	{
+		apprenticeB.style.backgroundColor = 'white';
+		map.removeLayer(cosmicAltar);		
+	}
+	else
+	{
+		apprenticeB.style.backgroundColor = 'rgb(28,172,120)';
+		cosmicAltar.addTo(map);
+	}
+}
+
+function toggleEarth()
+{
+	var earthB = document.getElementById("earthButton")
+	if(map.hasLayer(earthAltar))
+	{
+		earthB.style.backgroundColor = 'white';
+		map.removeLayer(earthAltar);		
+	}
+	else
+	{
+		earthB.style.backgroundColor = 'rgb(28,172,120)';
+		earthAltar.addTo(map);
+	}
+}
+
+function toggleWater()
+{
+	var waterB = document.getElementById("waterButton")
+	if(map.hasLayer(waterAltar))
+	{
+		waterB.style.backgroundColor = 'white';
+		map.removeLayer(waterAltar);		
+	}
+	else
+	{
+		waterB.style.backgroundColor = 'rgb(28,172,120)';
+		waterAltar.addTo(map);
+	}
+}
+
+function toggleDark()
+{
+	var darkB = document.getElementById("darkButton")
+	if(map.hasLayer(darkAltar))
+	{
+		darkB.style.backgroundColor = 'white';
+		map.removeLayer(darkAltar);		
+	}
+	else
+	{
+		darkB.style.backgroundColor = 'rgb(28,172,120)';
+		darkAltar.addTo(map);
+	}
+}
+
+function toggleDream()
+{
+	var dreamB = document.getElementById("dreamButton")
+	if(map.hasLayer(dreamAltar))
+	{
+		dreamB.style.backgroundColor = 'white';
+		map.removeLayer(dreamAltar);		
+	}
+	else
+	{
+		dreamB.style.backgroundColor = 'rgb(28,172,120)';
+		dreamAltar.addTo(map);
+	}
+}
+
+function toggleBlood()
+{
+	var bloodB = document.getElementById("bloodButton")
+	if(map.hasLayer(bloodAltar))
+	{
+		bloodB.style.backgroundColor = 'white';
+		map.removeLayer(bloodAltar);		
+	}
+	else
+	{
+		bloodB.style.backgroundColor = 'rgb(28,172,120)';
+		bloodAltar.addTo(map);
+	}
+}
+
+function toggleAlchemy()
+{
+	var alchemyB = document.getElementById("alchemyButton")
+	if(map.hasLayer(alchemyTable))
+	{
+		alchemyB.style.backgroundColor = 'white';
+		map.removeLayer(alchemyTable);		
+	}
+	else
+	{
+		alchemyB.style.backgroundColor = 'rgb(28,172,120)';
+		alchemyTable.addTo(map);
+	}
+}
+
+function toggleEnchantment()
+{
+	var enchantmentB = document.getElementById("enchantmentButton")
+	if(map.hasLayer(enchantmentTable))
+	{
+		enchantmentB.style.backgroundColor = 'white';
+		map.removeLayer(enchantmentTable);		
+	}
+	else
+	{
+		enchantmentB.style.backgroundColor = 'rgb(28,172,120)';
+		enchantmentTable.addTo(map);
 	}
 }
 
 function toggleMining()
 {
-	if(map.hasLayer(miningSpots))
+	if (copper.style.display == 'flex')
 	{
-		map.removeLayer(miningSpots);
+		copper.style.display = 'none';
+		tin.style.display = 'none';
+		clay.style.display = 'none';
+		iron.style.display = 'none';
+		sand.style.display = 'none';
+		rune.style.display = 'none';
+		coal.style.display = 'none';
+		nickel.style.display = 'none';
+		silver.style.display = 'none';
+		rhodonite.style.display = 'none';
+		salt.style.display = 'none';
+		mithril.style.display = 'none';
+		ice.style.display = 'none';
+		adamantium.style.display = 'none';
+		gold.style.display = 'none';
+		crimson.style.display = 'none';
+
+
+		mining.style.backgroundColor = 'white';
 	}
 	else
 	{
-		map.addLayer(miningSpots);
+		copper.style.display = 'flex';
+		tin.style.display = 'flex';
+		clay.style.display = 'flex';
+		iron.style.display = 'flex';
+		sand.style.display = 'flex';
+		rune.style.display = 'flex';
+		coal.style.display = 'flex';
+		nickel.style.display = 'flex';
+		silver.style.display = 'flex';
+		rhodonite.style.display = 'flex';
+		salt.style.display = 'flex';
+		mithril.style.display = 'flex';
+		ice.style.display = 'flex';
+		adamantium.style.display = 'flex';
+		gold.style.display = 'flex';
+		crimson.style.display = 'flex';
+
+		mining.style.backgroundColor = 'rgb(28, 172, 120)';
+
+		flounder.style.display = 'none';
+		sardine.style.display = 'none';
+		well.style.display = 'none';
+		cod.style.display = 'none';
+		stoneClam.style.display = 'none';
+		squid.style.display = 'none';
+		oyster.style.display = 'none';
+		shrimp.style.display = 'none';
+		trout.style.display = 'none';
+		salmon.style.display = 'none';
+		tuna.style.display = 'none';
+		starfish.style.display = 'none';
+		snake.style.display = 'none';
+		stoneCrab.style.display = 'none';
+		picklefish.style.display = 'none';
+		catfish.style.display = 'none';
+		giantsnail.style.display = 'none';
+		clownfish.style.display = 'none';
+		seahorse.style.display = 'none';
+		urchin.style.display = 'none';
+		crab.style.display = 'none';
+		angler.style.display = 'none';
+		seaturtle.style.display = 'none';
+		pufferfish.style.display = 'none';
+		mantaray.style.display = 'none';
+		jellyfish.style.display = 'none';
+		goliath.style.display = 'none';
+		fishing.style.backgroundColor = 'rgb(255, 255, 255)';
+
+		air.style.display = 'none';
+		apprentice.style.display = 'none';
+		earth.style.display = 'none';
+		water.style.display = 'none';
+		dark.style.display = 'none';
+		dream.style.display = 'none';
+		blood.style.display = 'none';
+		alchemy.style.display = 'none';
+		enchantment.style.display = 'none';
+
+		altar.style.backgroundColor = 'white';
+
+		log.style.display = 'none';
+		birch.style.display = 'none';
+		oak.style.display = 'none';
+		spruce.style.display = 'none';
+		willow.style.display = 'none';
+		acacia.style.display = 'none';
+		dreadknot.style.display = 'none';
+		mahogany.style.display = 'none';
+		baobab.style.display = 'none';
+		bedlam.style.display = 'none';
+
+		woodcutting.style.backgroundColor = 'white';
 	}
 }
+
+
+function toggleMithril()
+{
+	var mithril = document.getElementById("mithrilButton")
+	ironButtonColor = getComputedStyle(document.getElementById("ironButton")).backgroundColor
+	mithrilButtonColor = getComputedStyle(document.getElementById("mithrilButton")).backgroundColor
+	coalButtonColor = getComputedStyle(document.getElementById("coalButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make mithril green and add layer
+	if(ironButtonColor == 'rgb(255, 255, 255)' && mithrilButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(coalironmithril) == false)
+	{
+		mithril.style.backgroundColor = 'rgb(28,172,120)';
+		coalironmithril.addTo(map);
+	}
+	//if maplayer exists and iron is green, just make mithril green
+	if(map.hasLayer(coalironmithril))
+	{
+		mithril.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make mithril white
+	if(map.hasLayer(coalironmithril) && mithrilButtonColor == 'rgb(28, 172, 120)' && coalButtonColor == 'rgb(28, 172, 120)' || mithrilButtonColor == 'rgb(28, 172, 120)' && ironButtonColor == 'rgb(28, 172, 120)')
+	{
+		mithril.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, iron is white, but mithril is green. Remove Layer.
+	if(map.hasLayer(coalironmithril) && coalButtonColor == 'rgb(255, 255, 255)' && mithrilButtonColor == 'rgb(28, 172, 120)' && ironButtonColor == 'rgb(255, 255, 255)')
+	{
+		mithril.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(coalironmithril)
+	}
+}
+
+function toggleIron()
+{
+	var iron = document.getElementById("ironButton")
+	ironButtonColor = getComputedStyle(document.getElementById("ironButton")).backgroundColor
+	mithrilButtonColor = getComputedStyle(document.getElementById("mithrilButton")).backgroundColor
+	coalButtonColor = getComputedStyle(document.getElementById("coalButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make iron green and add layer
+	if(ironButtonColor == 'rgb(255, 255, 255)' && mithrilButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(coalironmithril) == false)
+	{
+		iron.style.backgroundColor = 'rgb(28,172,120)';
+		coalironmithril.addTo(map);
+	}
+	//if maplayer exists and mithril is green, just make iron green
+	if(map.hasLayer(coalironmithril))
+	{
+		iron.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make iron white
+	if(map.hasLayer(coalironmithril) && coalButtonColor == 'rgb(28, 172, 120)' && ironButtonColor == 'rgb(28, 172, 120)' || mithrilButtonColor == 'rgb(28, 172, 120)' && ironButtonColor == 'rgb(28, 172, 120)')
+	{
+		iron.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, mithril is white, but iron is green. Remove Layer.
+		if(map.hasLayer(coalironmithril) && mithrilButtonColor == 'rgb(255, 255, 255)' && ironButtonColor == 'rgb(28, 172, 120)' && coalButtonColor == 'rgb(255, 255, 255)')
+	{
+		iron.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(coalironmithril)
+	}
+}
+
+function toggleCoal()
+{
+	var coal = document.getElementById("coalButton")
+	ironButtonColor = getComputedStyle(document.getElementById("ironButton")).backgroundColor
+	mithrilButtonColor = getComputedStyle(document.getElementById("mithrilButton")).backgroundColor
+	coalButtonColor = getComputedStyle(document.getElementById("coalButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make iron green and add layer
+	if(coalButtonColor == 'rgb(255, 255, 255)' && mithrilButtonColor == 'rgb(255, 255, 255)' || ironButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(coalironmithril) == false)
+	{
+		coal.style.backgroundColor = 'rgb(28,172,120)';
+		coalironmithril.addTo(map);
+	}
+	//if maplayer exists and mithril is green, just make iron green
+	if(map.hasLayer(coalironmithril))
+	{
+		coal.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make iron white
+	if(map.hasLayer(coalironmithril) && ironButtonColor == 'rgb(28, 172, 120)' && coalButtonColor == 'rgb(28, 172, 120)' || mithrilButtonColor == 'rgb(28, 172, 120)' && coalButtonColor == 'rgb(28, 172, 120)')
+	{
+		coal.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, mithril is white, but iron is green. Remove Layer.
+		if(map.hasLayer(coalironmithril) && mithrilButtonColor == 'rgb(255, 255, 255)' && coalButtonColor == 'rgb(28, 172, 120)' && ironButtonColor == 'rgb(255, 255, 255)')
+	{
+		coal.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(coalironmithril)
+	}
+}
+
+function toggleCopper()
+{
+	var copperB = document.getElementById("copperButton")
+	if(map.hasLayer(copper1))
+	{
+		copperB.style.backgroundColor = 'white';
+		map.removeLayer(copper1);		
+	}
+	else
+	{
+		copperB.style.backgroundColor = 'rgb(28,172,120)';
+		copper1.addTo(map);
+	}
+}
+
+function toggleTin()
+{
+	var tinB = document.getElementById("tinButton")
+	if(map.hasLayer(tin1))
+	{
+		tinB.style.backgroundColor = 'white';
+		map.removeLayer(tin1);		
+	}
+	else
+	{
+		tinB.style.backgroundColor = 'rgb(28,172,120)';
+		tin1.addTo(map);
+	}
+}
+
+function toggleSalt()
+{
+	var saltB = document.getElementById("saltButton")
+	if(map.hasLayer(salt1))
+	{
+		saltB.style.backgroundColor = 'white';
+		map.removeLayer(salt1);		
+	}
+	else
+	{
+		saltB.style.backgroundColor = 'rgb(28,172,120)';
+		salt1.addTo(map);
+	}
+}
+
+function toggleClay()
+{
+	var clayB = document.getElementById("clayButton")
+	if(map.hasLayer(clay1))
+	{
+		clayB.style.backgroundColor = 'white';
+		map.removeLayer(clay1);		
+	}
+	else
+	{
+		clayB.style.backgroundColor = 'rgb(28,172,120)';
+		clay1.addTo(map);
+	}
+}
+
+function toggleSand()
+{
+	var sandB = document.getElementById("sandButton")
+	if(map.hasLayer(sand1))
+	{
+		sandB.style.backgroundColor = 'white';
+		map.removeLayer(sand1);		
+	}
+	else
+	{
+		sandB.style.backgroundColor = 'rgb(28,172,120)';
+		sand1.addTo(map);
+	}
+}
+
+function toggleRune()
+{
+	var runeB = document.getElementById("runeButton")
+	if(map.hasLayer(runeEssence1))
+	{
+		runeB.style.backgroundColor = 'white';
+		map.removeLayer(runeEssence1);		
+	}
+	else
+	{
+		runeB.style.backgroundColor = 'rgb(28,172,120)';
+		runeEssence1.addTo(map);
+	}
+}
+
+function toggleIce()
+{
+	var iceB = document.getElementById("iceButton")
+	if(map.hasLayer(ice1))
+	{
+		iceB.style.backgroundColor = 'white';
+		map.removeLayer(ice1);		
+	}
+	else
+	{
+		iceB.style.backgroundColor = 'rgb(28,172,120)';
+		ice1.addTo(map);
+	}
+}
+
+function toggleCrimson()
+{
+	var crimsonB = document.getElementById("crimsonButton")
+	if(map.hasLayer(crimson1))
+	{
+		crimsonB.style.backgroundColor = 'white';
+		map.removeLayer(crimson1);		
+	}
+	else
+	{
+		crimsonB.style.backgroundColor = 'rgb(28,172,120)';
+		crimson1.addTo(map);
+	}
+}
+
+function toggleAdamantium()
+{
+	var adamantiumB = document.getElementById("adamantiumButton")
+	if(map.hasLayer(adamantium1))
+	{
+		adamantiumB.style.backgroundColor = 'white';
+		map.removeLayer(adamantium1);		
+	}
+	else
+	{
+		adamantiumB.style.backgroundColor = 'rgb(28,172,120)';
+		adamantium1.addTo(map);
+	}
+}
+
+function toggleNickel()
+{
+	var nickel = document.getElementById("nickelButton")
+	nickelButtonColor = getComputedStyle(document.getElementById("nickelButton")).backgroundColor
+	rhodoniteButtonColor = getComputedStyle(document.getElementById("rhodoniteButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(nickelButtonColor == 'rgb(255, 255, 255)' && rhodoniteButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(nickelrhodonite) == false)
+	{
+		nickel.style.backgroundColor = 'rgb(28,172,120)';
+		nickelrhodonite.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(nickelrhodonite))
+	{
+		nickel.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(nickelrhodonite) && nickelButtonColor == 'rgb(28, 172, 120)' && rhodoniteButtonColor == 'rgb(28, 172, 120)')
+	{
+		nickel.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(nickelrhodonite) && rhodoniteButtonColor == 'rgb(255, 255, 255)' && nickelButtonColor == 'rgb(28, 172, 120)')
+	{
+		nickel.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(nickelrhodonite)
+	}
+}
+
+function toggleRhodonite()
+{
+	var rhodonite = document.getElementById("rhodoniteButton")
+	nickelButtonColor = getComputedStyle(document.getElementById("nickelButton")).backgroundColor
+	rhodoniteButtonColor = getComputedStyle(document.getElementById("rhodoniteButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(rhodoniteButtonColor == 'rgb(255, 255, 255)' && nickelButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(nickelrhodonite) == false)
+	{
+		rhodonite.style.backgroundColor = 'rgb(28,172,120)';
+		nickelrhodonite.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(nickelrhodonite))
+	{
+		rhodonite.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(nickelrhodonite) && rhodoniteButtonColor == 'rgb(28, 172, 120)' && nickelButtonColor == 'rgb(28, 172, 120)')
+	{
+		rhodonite.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(nickelrhodonite) && nickelButtonColor == 'rgb(255, 255, 255)' && rhodoniteButtonColor == 'rgb(28, 172, 120)')
+	{
+		rhodonite.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(nickelrhodonite)
+	}
+}
+
+function toggleSilver()
+{
+	var silver = document.getElementById("silverButton")
+	silverButtonColor = getComputedStyle(document.getElementById("silverButton")).backgroundColor
+	goldButtonColor = getComputedStyle(document.getElementById("goldButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(silverButtonColor == 'rgb(255, 255, 255)' && goldButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(silvergold) == false)
+	{
+		silver.style.backgroundColor = 'rgb(28,172,120)';
+		silvergold.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(silvergold))
+	{
+		silver.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(silvergold) && silverButtonColor == 'rgb(28, 172, 120)' && goldButtonColor == 'rgb(28, 172, 120)')
+	{
+		silver.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(silvergold) && goldButtonColor == 'rgb(255, 255, 255)' && silverButtonColor == 'rgb(28, 172, 120)')
+	{
+		silver.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(silvergold)
+	}
+}
+
+function toggleGold()
+{
+	var gold = document.getElementById("goldButton")
+	silverButtonColor = getComputedStyle(document.getElementById("silverButton")).backgroundColor
+	goldButtonColor = getComputedStyle(document.getElementById("goldButton")).backgroundColor
+	//if both buttons are white, and maplayer does not exist, make flounder green and add layer
+	if(goldButtonColor == 'rgb(255, 255, 255)' && silverButtonColor == 'rgb(255, 255, 255)' && map.hasLayer(silvergold) == false)
+	{
+		gold.style.backgroundColor = 'rgb(28,172,120)';
+		silvergold.addTo(map);
+	}
+	//if maplayer exists and sardine is green, just make flounder green
+	if(map.hasLayer(silvergold))
+	{
+		gold.style.backgroundColor = 'rgb(28,172,120)';
+	}
+	//if maplayer exists and both are green, make flounder white
+	if(map.hasLayer(silvergold) && goldButtonColor == 'rgb(28, 172, 120)' && silverButtonColor == 'rgb(28, 172, 120)')
+	{
+		gold.style.backgroundColor = 'rgb(255, 255, 255)';
+	}
+	//if map layer exists, sardine is white, but flounder is green. Remove Layer.
+		if(map.hasLayer(silvergold) && silverButtonColor == 'rgb(255, 255, 255)' && goldButtonColor == 'rgb(28, 172, 120)')
+	{
+		gold.style.backgroundColor = 'rgb(255, 255, 255)'
+		map.removeLayer(silvergold)
+	}
+}
+
 
 function toggleFarming()
 {
@@ -362,13 +1159,247 @@ function toggleFarming()
 
 function toggleWoodcutting()
 {
-	if(map.hasLayer(woodcuttingSpots))
+	if (log.style.display == 'flex')
 	{
-		map.removeLayer(woodcuttingSpots);
+		log.style.display = 'none';
+		birch.style.display = 'none';
+		oak.style.display = 'none';
+		spruce.style.display = 'none';
+		willow.style.display = 'none';
+		acacia.style.display = 'none';
+		dreadknot.style.display = 'none';
+		mahogany.style.display = 'none';
+		baobab.style.display = 'none';
+		bedlam.style.display = 'none';
+
+		woodcutting.style.backgroundColor = 'white';
 	}
 	else
 	{
-		map.addLayer(woodcuttingSpots);
+		log.style.display = 'flex';
+		birch.style.display = 'flex';
+		oak.style.display = 'flex';
+		spruce.style.display = 'flex';
+		willow.style.display = 'flex';
+		acacia.style.display = 'flex';
+		dreadknot.style.display = 'flex';
+		mahogany.style.display = 'flex';
+		baobab.style.display = 'flex';
+		bedlam.style.display = 'flex';
+
+		woodcutting.style.backgroundColor = 'rgb(28, 172, 120)';
+
+		copper.style.display = 'none';
+		tin.style.display = 'none';
+		clay.style.display = 'none';
+		iron.style.display = 'none';
+		sand.style.display = 'none';
+		rune.style.display = 'none';
+		coal.style.display = 'none';
+		nickel.style.display = 'none';
+		silver.style.display = 'none';
+		rhodonite.style.display = 'none';
+		salt.style.display = 'none';
+		mithril.style.display = 'none';
+		ice.style.display = 'none';
+		adamantium.style.display = 'none';
+		gold.style.display = 'none';
+		crimson.style.display = 'none';
+
+
+		mining.style.backgroundColor = 'white';
+
+		flounder.style.display = 'none';
+		sardine.style.display = 'none';
+		well.style.display = 'none';
+		cod.style.display = 'none';
+		stoneClam.style.display = 'none';
+		squid.style.display = 'none';
+		oyster.style.display = 'none';
+		shrimp.style.display = 'none';
+		trout.style.display = 'none';
+		salmon.style.display = 'none';
+		tuna.style.display = 'none';
+		starfish.style.display = 'none';
+		snake.style.display = 'none';
+		stoneCrab.style.display = 'none';
+		picklefish.style.display = 'none';
+		catfish.style.display = 'none';
+		giantsnail.style.display = 'none';
+		clownfish.style.display = 'none';
+		seahorse.style.display = 'none';
+		urchin.style.display = 'none';
+		crab.style.display = 'none';
+		angler.style.display = 'none';
+		seaturtle.style.display = 'none';
+		pufferfish.style.display = 'none';
+		mantaray.style.display = 'none';
+		jellyfish.style.display = 'none';
+		goliath.style.display = 'none';
+		fishing.style.backgroundColor = 'rgb(255, 255, 255)';
+
+		air.style.display = 'none';
+		apprentice.style.display = 'none';
+		earth.style.display = 'none';
+		water.style.display = 'none';
+		dark.style.display = 'none';
+		dream.style.display = 'none';
+		blood.style.display = 'none';
+		alchemy.style.display = 'none';
+		enchantment.style.display = 'none';
+
+		altar.style.backgroundColor = 'white';
+	}
+
+}
+
+function toggleLog()
+{
+	var logB = document.getElementById("logButton")
+	if(map.hasLayer(log1))
+	{
+		logB.style.backgroundColor = 'white';
+		map.removeLayer(log1);		
+	}
+	else
+	{
+		logB.style.backgroundColor = 'rgb(28,172,120)';
+		log1.addTo(map);
+	}
+}
+
+function toggleBirch()
+{
+	var birchB = document.getElementById("birchButton")
+	if(map.hasLayer(birch1))
+	{
+		birchB.style.backgroundColor = 'white';
+		map.removeLayer(birch1);		
+	}
+	else
+	{
+		birchB.style.backgroundColor = 'rgb(28,172,120)';
+		birch1.addTo(map);
+	}
+}
+
+function toggleOak()
+{
+	var oakB = document.getElementById("oakButton")
+	if(map.hasLayer(oak1))
+	{
+		oakB.style.backgroundColor = 'white';
+		map.removeLayer(oak1);		
+	}
+	else
+	{
+		oakB.style.backgroundColor = 'rgb(28,172,120)';
+		oak1.addTo(map);
+	}
+}
+
+function toggleSpruce()
+{
+	var spruceB = document.getElementById("spruceButton")
+	if(map.hasLayer(spruce1))
+	{
+		spruceB.style.backgroundColor = 'white';
+		map.removeLayer(spruce1);		
+	}
+	else
+	{
+		spruceB.style.backgroundColor = 'rgb(28,172,120)';
+		spruce1.addTo(map);
+	}
+}
+
+function toggleWillow()
+{
+	var willowB = document.getElementById("willowButton")
+	if(map.hasLayer(willow1))
+	{
+		willowB.style.backgroundColor = 'white';
+		map.removeLayer(willow1);		
+	}
+	else
+	{
+		willowB.style.backgroundColor = 'rgb(28,172,120)';
+		willow1.addTo(map);
+	}
+}
+
+function toggleAcacia()
+{
+	var acaciaB = document.getElementById("acaciaButton")
+	if(map.hasLayer(acacia1))
+	{
+		acaciaB.style.backgroundColor = 'white';
+		map.removeLayer(acacia1);		
+	}
+	else
+	{
+		acaciaB.style.backgroundColor = 'rgb(28,172,120)';
+		acacia1.addTo(map);
+	}
+}
+
+function toggleDreadknot()
+{
+	var dreadknotB = document.getElementById("dreadknotButton")
+	if(map.hasLayer(dreadknot1))
+	{
+		dreadknotB.style.backgroundColor = 'white';
+		map.removeLayer(dreadknot1);		
+	}
+	else
+	{
+		dreadknotB.style.backgroundColor = 'rgb(28,172,120)';
+		dreadknot1.addTo(map);
+	}
+}
+
+function toggleMahogany()
+{
+	var mahoganyB = document.getElementById("mahoganyButton")
+	if(map.hasLayer(mahogany1))
+	{
+		mahoganyB.style.backgroundColor = 'white';
+		map.removeLayer(mahogany1);		
+	}
+	else
+	{
+		mahoganyB.style.backgroundColor = 'rgb(28,172,120)';
+		mahogany1.addTo(map);
+	}
+}
+
+function toggleBaobab()
+{
+	var baobabB = document.getElementById("baobabButton")
+	if(map.hasLayer(baobab1))
+	{
+		baobabB.style.backgroundColor = 'white';
+		map.removeLayer(baobab1);		
+	}
+	else
+	{
+		baobabB.style.backgroundColor = 'rgb(28,172,120)';
+		baobab1.addTo(map);
+	}
+}
+
+function toggleBedlam()
+{
+	var bedlamB = document.getElementById("bedlamButton")
+	if(map.hasLayer(bedlam1))
+	{
+		bedlamB.style.backgroundColor = 'white';
+		map.removeLayer(bedlam1);		
+	}
+	else
+	{
+		bedlamB.style.backgroundColor = 'rgb(28,172,120)';
+		bedlam1.addTo(map);
 	}
 }
 
@@ -405,30 +1436,30 @@ function toggleGoliath()
 function toggleMantaray()
 {
 	var mantarayB = document.getElementById("mantarayButton")
-	if(map.hasLayer(mantaray))
+	if(map.hasLayer(mantaray1))
 	{
 		mantarayB.style.backgroundColor = 'white';
-		map.removeLayer(mantaray);		
+		map.removeLayer(mantaray1);		
 	}
 	else
 	{
 		mantarayB.style.backgroundColor = 'rgb(28,172,120)';
-		mantaray.addTo(map);
+		mantaray1.addTo(map);
 	}
 }
 
 function togglePufferfish()
 {
 	var pufferfishB = document.getElementById("pufferfishButton")
-	if(map.hasLayer(pufferfish))
+	if(map.hasLayer(pufferfish1))
 	{
 		pufferfishB.style.backgroundColor = 'white';
-		map.removeLayer(pufferfish);		
+		map.removeLayer(pufferfish1);		
 	}
 	else
 	{
 		pufferfishB.style.backgroundColor = 'rgb(28,172,120)';
-		pufferfish.addTo(map);
+		pufferfish1.addTo(map);
 	}
 }
 
@@ -436,30 +1467,30 @@ function togglePufferfish()
 function toggleJellyfish()
 {
 	var jellyfishB = document.getElementById("jellyfishButton")
-	if(map.hasLayer(jellyfish))
+	if(map.hasLayer(jellyfish1))
 	{
 		jellyfishB.style.backgroundColor = 'white';
-		map.removeLayer(jellyfish);		
+		map.removeLayer(jellyfish1);		
 	}
 	else
 	{
 		jellyfishB.style.backgroundColor = 'rgb(28,172,120)';
-		jellyfish.addTo(map);
+		jellyfish1.addTo(map);
 	}
 }
 
 function toggleSeaturtle()
 {
 	var seaturtleB = document.getElementById("seaturtleButton")
-	if(map.hasLayer(seaturtle))
+	if(map.hasLayer(seaturtle1))
 	{
 		seaturtleB.style.backgroundColor = 'white';
-		map.removeLayer(seaturtle);		
+		map.removeLayer(seaturtle1);		
 	}
 	else
 	{
 		seaturtleB.style.backgroundColor = 'rgb(28,172,120)';
-		seaturtle.addTo(map);
+		seaturtle1.addTo(map);
 	}
 }
 
@@ -467,60 +1498,60 @@ function toggleSeaturtle()
 function toggleAngler()
 {
 	var anglerB = document.getElementById("anglerButton")
-	if(map.hasLayer(angler))
+	if(map.hasLayer(angler1))
 	{
 		anglerB.style.backgroundColor = 'white';
-		map.removeLayer(angler);		
+		map.removeLayer(angler1);		
 	}
 	else
 	{
 		anglerB.style.backgroundColor = 'rgb(28,172,120)';
-		angler.addTo(map);
+		angler1.addTo(map);
 	}
 }
 
 function togglegiantSnail()
 {
 	var giantsnailB = document.getElementById("giantsnailButton")
-	if(map.hasLayer(giantsnail))
+	if(map.hasLayer(giantsnail1))
 	{
 		giantsnailB.style.backgroundColor = 'white';
-		map.removeLayer(giantsnail);		
+		map.removeLayer(giantsnail1);		
 	}
 	else
 	{
 		giantsnailB.style.backgroundColor = 'rgb(28,172,120)';
-		giantsnail.addTo(map);
+		giantsnail1.addTo(map);
 	}
 }
 
 function togglePicklefish()
 {
 	var picklefishB = document.getElementById("picklefishButton")
-	if(map.hasLayer(picklefish))
+	if(map.hasLayer(picklefish1))
 	{
 		picklefishB.style.backgroundColor = 'white';
-		map.removeLayer(picklefish);		
+		map.removeLayer(picklefish1);		
 	}
 	else
 	{
 		picklefishB.style.backgroundColor = 'rgb(28,172,120)';
-		picklefish.addTo(map);
+		picklefish1.addTo(map);
 	}
 }
 
 function toggleCatfish()
 {
 	var catfishB = document.getElementById("catfishButton")
-	if(map.hasLayer(catfish))
+	if(map.hasLayer(catfish1))
 	{
 		catfishB.style.backgroundColor = 'white';
-		map.removeLayer(catfish);		
+		map.removeLayer(catfish1);		
 	}
 	else
 	{
 		catfishB.style.backgroundColor = 'rgb(28,172,120)';
-		catfish.addTo(map);
+		catfish1.addTo(map);
 	}
 }
 
@@ -647,15 +1678,15 @@ function toggleWell()
 function toggleTrout()
 {
 	var troutB = document.getElementById("troutButton")
-	if(map.hasLayer(trout))
+	if(map.hasLayer(trout1))
 	{
 		troutB.style.backgroundColor = 'white';
-		map.removeLayer(trout);		
+		map.removeLayer(trout1);		
 	}
 	else
 	{
 		troutB.style.backgroundColor = 'rgb(28,172,120)';
-		trout.addTo(map);
+		trout1.addTo(map);
 	}
 }
 
@@ -678,15 +1709,15 @@ function toggleStoneClam()
 function toggleSalmon()
 {
 	var salmonB = document.getElementById("salmonButton")
-	if(map.hasLayer(salmon))
+	if(map.hasLayer(salmon1))
 	{
 		salmonB.style.backgroundColor = 'white';
-		map.removeLayer(salmon);		
+		map.removeLayer(salmon1);		
 	}
 	else
 	{
 		salmonB.style.backgroundColor = 'rgb(28,172,120)';
-		salmon.addTo(map);
+		salmon1.addTo(map);
 	}
 }
 

@@ -705,3 +705,817 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+#airButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#airButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#apprenticeButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#apprenticeButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#earthButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#earthButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#waterButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;   
+    text-align: center;
+    z-index: 500;
+}
+#waterButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#darkButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#darkButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#dreamButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#dreamButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#bloodButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 150px;;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#bloodButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#alchemyButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#alchemyButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#enchantmentButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#enchantmentButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#copperButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#copperButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#tinButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#tinButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#clayButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#clayButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#ironButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 150px;;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#ironButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#sandButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#sandButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#runeButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#runeButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#coalButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#coalButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#nickelButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#nickelButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#silverButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#silverButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#rhodoniteButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#rhodoniteButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#saltButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#saltButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#mithrilButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#mithrilButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#iceButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#iceButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#adamantiumButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#adamantiumButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#goldButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#goldButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#crimsonButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#crimsonButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#obsidianButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#obsidianButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#netheriteButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#netheriteButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#logButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#logButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#oakButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#oakButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#birchButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#birchButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#spruceButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#spruceButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#willowButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#willowButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#acaciaButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#acaciaButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#dreadknotButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#dreadknotButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#mahoganyButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 290px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#mahoganyButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#baobabButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 430px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#baobabButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#bedlamButton{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.6;
+    text-align: center;
+    z-index: 500;
+}
+#bedlamButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

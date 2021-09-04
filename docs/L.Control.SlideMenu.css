@@ -5,14 +5,15 @@
 .leaflet-menu {
     display: flex !important;
     position: absolute;
-    background-color: #272727;
-    border: #f8f8f8 solid 1px;
-    overflow: auto;
+    background-color: #121212;
+    border: #bb87fc solid 1px;
     cursor: default;
     z-index: 9999;
     margin: -2px;
+    margin-bottom: 100px;
     align-content: top !important;
     padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
     text-align: center !important;
     font-size: 18px;
@@ -33,12 +34,12 @@
     background-color: transparent;
     border: none;
     font-size: 14pt;
-    color: #777;
+    color: #bb87fc;
     cursor: pointer;
     padding-left: 10px !important;
     padding-right: 13px !important;
 }
 
 .leaflet-menu-close-button:hover{
-    color: rgb(28,172,120);
+    color: #9c4dff;
 }

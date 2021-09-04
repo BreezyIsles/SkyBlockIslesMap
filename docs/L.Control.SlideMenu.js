@@ -7,7 +7,7 @@ L.Control.SlideMenu = L.Control.extend({
         direction: 'horizontal', // vertical or horizontal
         changeperc: '10',
         delay: '10',
-        icon: 'fa fa-chevron-right',
+        icon: 'fas fa-fish fa-lg',
         hidden: false
     },
 
@@ -24,7 +24,7 @@ L.Control.SlideMenu = L.Control.extend({
     onAdd: function(map){
         this._container = L.DomUtil.create('div', 'leaflet-control-slidemenu leaflet-bar leaflet-control');
         var link = L.DomUtil.create('a', 'leaflet-bar-part leaflet-bar-part-single', this._container);
-        link.title = 'Menu';
+        link.title = 'Fishing';
         L.DomUtil.create('span', this.options.icon, link);
 
         this._menu = L.DomUtil.create('div', 'leaflet-menu', map._container);
@@ -70,11 +70,11 @@ L.Control.SlideMenu = L.Control.extend({
         if(this._isHorizontal){
             if(this._isLeftPosition){
                 closeButton.style.float = 'right';
-                L.DomUtil.addClass(closeButton, 'fa fa-chevron-left');
+                L.DomUtil.addClass(closeButton, 'fas fa-chevron-left');
             }
             else{
                 closeButton.style.float = 'left';
-                L.DomUtil.addClass(closeButton, 'fa fa-chevron-right');
+                L.DomUtil.addClass(closeButton, 'fas fa-fish fa-lg');
             }
         }
         else{

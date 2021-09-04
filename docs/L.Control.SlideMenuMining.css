@@ -1,0 +1,44 @@
+.leafletmining-control-slide{
+    cursor: pointer;
+}
+
+.leafletmining-menu {
+    display: flex !important;
+    position: absolute;
+    background-color: #121212;
+    border: #bb87fc solid 1px;
+    overflow: auto;
+    cursor: default;
+    z-index: 9999;
+    margin: -2px;
+    align-content: top !important;
+    padding-top: 20px;
+    color: white;
+    text-align: center !important;
+    font-size: 18px;
+}
+
+.leafletmining-menu::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background: #f2f2f2;
+}
+
+.leafletmining-menu::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #777;   
+}
+
+.leafletmining-menu-close-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14pt;
+    color: #bb87fc;
+    cursor: pointer;
+    padding-left: 10px !important;
+    padding-right: 13px !important;
+}
+
+.leafletmining-menu-close-button:hover{
+    color: #9c4dff;
+}

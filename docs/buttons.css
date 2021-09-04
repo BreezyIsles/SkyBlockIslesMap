@@ -6,12 +6,12 @@
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+       color: white;
     text-align: center;
     z-index: 500;
 }
@@ -28,12 +28,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -50,12 +50,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -71,7 +71,7 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
@@ -79,6 +79,7 @@
     margin-top: 5px;
     text-align: center;
     z-index: 500;
+    color: white;
 }
 #goliathButton:hover{
     opacity: 0.8;
@@ -93,13 +94,14 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: #f8f8f8;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     text-align: center;
     z-index: 500;
+    color: white;
 }
 #flounderButton:hover{
     opacity: 0.8;
@@ -113,7 +115,7 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
@@ -121,6 +123,7 @@
     margin-top: 5px;
     text-align: center;
     z-index: 500;
+    color: white;
 }
 #codButton:hover{
     opacity: 0.8;
@@ -135,12 +138,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -157,12 +160,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -179,12 +182,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -201,12 +204,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -223,12 +226,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -245,12 +248,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -267,12 +270,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -289,12 +292,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -311,12 +314,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -335,12 +338,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -357,12 +360,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -379,12 +382,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -401,12 +404,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -423,12 +426,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -445,12 +448,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -468,12 +471,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -490,12 +493,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -512,12 +515,12 @@
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -534,12 +537,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -556,12 +559,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -578,12 +581,12 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -600,12 +603,12 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -623,12 +626,12 @@
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -636,6 +639,7 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
 
 #airButton{
     display: inherit;
@@ -645,12 +649,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -667,12 +671,13 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -689,12 +694,13 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -711,12 +717,13 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-       
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -733,12 +740,13 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -755,12 +763,13 @@
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -777,12 +786,13 @@
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -799,12 +809,13 @@
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -816,17 +827,17 @@
 #enchantmentButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 190px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -843,12 +854,12 @@
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -865,12 +876,12 @@
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -887,12 +898,12 @@
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -909,12 +920,12 @@
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -926,17 +937,17 @@
 #tinButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 160px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -948,17 +959,17 @@
 #clayButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 160px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -970,17 +981,17 @@
 #ironButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 190px;
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -992,17 +1003,17 @@
 #sandButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 190px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1014,17 +1025,17 @@
 #runeButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 190px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1036,17 +1047,17 @@
 #coalButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1058,17 +1069,17 @@
 #nickelButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1080,17 +1091,17 @@
 #silverButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1102,17 +1113,17 @@
 #rhodoniteButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1124,17 +1135,17 @@
 #saltButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1146,17 +1157,17 @@
 #mithrilButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1168,17 +1179,17 @@
 #iceButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1190,17 +1201,17 @@
 #adamantiumButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1212,17 +1223,17 @@
 #goldButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 310px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1234,17 +1245,17 @@
 #crimsonButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1256,17 +1267,17 @@
 #obsidianButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 310px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1278,17 +1289,17 @@
 #netheriteButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 340px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1300,17 +1311,17 @@
 #logButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1322,17 +1333,17 @@
 #oakButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1344,17 +1355,17 @@
 #birchButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 220px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1366,17 +1377,17 @@
 #spruceButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1388,17 +1399,17 @@
 #willowButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1410,17 +1421,17 @@
 #acaciaButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 250px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1432,17 +1443,17 @@
 #dreadknotButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1454,17 +1465,17 @@
 #mahoganyButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1476,17 +1487,17 @@
 #baobabButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 280px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
@@ -1498,21 +1509,746 @@
 #bedlamButton{
     display: inherit;
     align-items: center;
-    
+    margin-top: 5px;
     top: 310px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    
+    color: white;
     text-align: center;
     z-index: 500;
 }
 #bedlamButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#wheatButton{
+    display: inherit;
+    align-items: center;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#wheatButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#lettuceButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#lettuceButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#potatoButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#potatoButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}   
+
+#flaxButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#flaxButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#nettleLeafButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#nettleLeafButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#tomatoButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#tomatoButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#carrotButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#carrotButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#sugarcaneButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#sugarcaneButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cocoaBeansButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#cocoaBeansButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#vikingHopsButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#vikingHopsButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#beetButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#beetButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cornButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#cornButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#garlicButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#garlicButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#bambooButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#bambooButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#pyrePepperButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#pyrePepperButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#pumpkinButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#pumpkinButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#appleButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#appleButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#orangeButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#orangeButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#bananaButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#bananaButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cherryButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#cherryButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#blackberryButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#blackberryButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#coconutButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#coconutButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#gemstonesButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#gemstonesButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#bartenderButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#bartenderButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#rangedItemsButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#rangedItemsButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#foodButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#foodButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#farmingButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#farmingButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#magicButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#magicButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#weaponsArmorToolsButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#weaponsArmorToolsButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#generalButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#generalButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cookingButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#cookingButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#fishingButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#fishingButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#oresButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#oresButton:hover{
     opacity: 0.8;
     cursor: pointer;
 }

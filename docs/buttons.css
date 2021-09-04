@@ -1,17 +1,17 @@
 #fishingButton{
     display: flex;
     align-items: center;
-    position: absolute;
+    
     top: 100px;
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -21,19 +21,19 @@
 }
 
 #sardineButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 100px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -43,19 +43,19 @@
 }
 
 #jellyfishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 340px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -65,19 +65,18 @@
 }
 
 #goliathButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
     top: 340px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    margin-top: 5px;
     text-align: center;
     z-index: 500;
 }
@@ -87,19 +86,18 @@
 }
 
 #flounderButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 100px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: #f8f8f8;
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
     text-align: center;
     z-index: 500;
 }
@@ -109,19 +107,18 @@
 }
 
 #codButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
     top: 130px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    margin-top: 5px;
     text-align: center;
     z-index: 500;
 }
@@ -131,19 +128,19 @@
 }
 
 #wellButton{
-    display: none;
+    vertical-align: middle !important;
+    display: inherit;
     align-items: center;
-    position: absolute;
     top: 100px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -153,19 +150,19 @@
 }
 
 #stoneCrabButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 220px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -175,19 +172,19 @@
 }
 
 #picklefishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 220px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -197,19 +194,19 @@
 }
 
 #pufferfishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 310px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -219,19 +216,19 @@
 }
 
 #mantarayButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 340px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -241,19 +238,19 @@
 }
 
 #catfishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 250px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -263,19 +260,19 @@
 }
 
 #clownfishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 250px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -285,19 +282,19 @@
 }
 
 #seahorseButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 280px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -307,19 +304,19 @@
 }
 
 #seaturtleButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 310px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -331,19 +328,19 @@
 
 
 #anglerButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 310px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -353,19 +350,19 @@
 }
 
 #crabButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 280px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -375,19 +372,19 @@
 }
 
 #urchinButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 280px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -397,19 +394,19 @@
 }
 
 #snakeButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 220px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -419,19 +416,19 @@
 }
 
 #stoneClamButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 130px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -441,19 +438,19 @@
 }
 
 #giantsnailButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 250px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -464,19 +461,19 @@
 
 
 #squidButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 130px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -486,19 +483,19 @@
 }
 
 #troutButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 160px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -508,19 +505,19 @@
 }
 
 #salmonButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 190px;
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -530,19 +527,19 @@
 }
 
 #oysterButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 160px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -552,19 +549,19 @@
 }
 
 #shrimpButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 160px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -574,19 +571,19 @@
 }
 
 #tunaButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 190px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -596,19 +593,19 @@
 }
 
 #starfishButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    margin-top: 5px;
     top: 190px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -621,17 +618,17 @@
 #altarButton{
     display: flex;
     align-items: center;
-    position: absolute;
+    
     top: 130px;
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -641,19 +638,19 @@
 }
 
 #airButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 130px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -663,19 +660,19 @@
 }
 
 #apprenticeButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 130px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -685,19 +682,19 @@
 }
 
 #earthButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 130px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -707,19 +704,19 @@
 }
 
 #waterButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;   
+       
     text-align: center;
     z-index: 500;
 }
@@ -729,19 +726,19 @@
 }
 
 #darkButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -751,19 +748,19 @@
 }
 
 #dreamButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -773,19 +770,19 @@
 }
 
 #bloodButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -795,19 +792,19 @@
 }
 
 #alchemyButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -817,19 +814,19 @@
 }
 
 #enchantmentButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -841,17 +838,17 @@
 #miningButton{
     display: flex;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -863,17 +860,17 @@
 #farmingButton{
     display: flex;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -885,17 +882,17 @@
 #woodcuttingButton{
     display: flex;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 10px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -905,19 +902,19 @@
 }
 
 #copperButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -927,19 +924,19 @@
 }
 
 #tinButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -949,19 +946,19 @@
 }
 
 #clayButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 160px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -971,19 +968,19 @@
 }
 
 #ironButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 150px;;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -993,19 +990,19 @@
 }
 
 #sandButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1015,19 +1012,19 @@
 }
 
 #runeButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 190px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1037,19 +1034,19 @@
 }
 
 #coalButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1059,19 +1056,19 @@
 }
 
 #nickelButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1081,19 +1078,19 @@
 }
 
 #silverButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1103,19 +1100,19 @@
 }
 
 #rhodoniteButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1125,19 +1122,19 @@
 }
 
 #saltButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1147,19 +1144,19 @@
 }
 
 #mithrilButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1169,19 +1166,19 @@
 }
 
 #iceButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1191,19 +1188,19 @@
 }
 
 #adamantiumButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1213,19 +1210,19 @@
 }
 
 #goldButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 310px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1235,19 +1232,19 @@
 }
 
 #crimsonButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1257,19 +1254,19 @@
 }
 
 #obsidianButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 310px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1279,19 +1276,19 @@
 }
 
 #netheriteButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 340px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1301,19 +1298,19 @@
 }
 
 #logButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1323,19 +1320,19 @@
 }
 
 #oakButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1345,19 +1342,19 @@
 }
 
 #birchButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 220px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1367,19 +1364,19 @@
 }
 
 #spruceButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1389,19 +1386,19 @@
 }
 
 #willowButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1411,19 +1408,19 @@
 }
 
 #acaciaButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 250px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1433,19 +1430,19 @@
 }
 
 #dreadknotButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1455,19 +1452,19 @@
 }
 
 #mahoganyButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 290px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1477,19 +1474,19 @@
 }
 
 #baobabButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 280px;
     left: 430px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }
@@ -1499,19 +1496,19 @@
 }
 
 #bedlamButton{
-    display: none;
+    display: inherit;
     align-items: center;
-    position: absolute;
+    
     top: 310px;
     left: 150px;
     width: 131px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     border-color: gray;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    opacity: 0.6;
+    
     text-align: center;
     z-index: 500;
 }

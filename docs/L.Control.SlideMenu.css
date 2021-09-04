@@ -1,0 +1,44 @@
+.leaflet-control-slidemenu{
+    cursor: pointer;
+}
+
+.leaflet-menu {
+    display: flex !important;
+    position: absolute;
+    background-color: #272727;
+    border: #f8f8f8 solid 1px;
+    overflow: auto;
+    cursor: default;
+    z-index: 9999;
+    margin: -2px;
+    align-content: top !important;
+    padding-top: 20px;
+    color: white;
+    text-align: center !important;
+    font-size: 18px;
+}
+
+.leaflet-menu::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background: #f2f2f2;
+}
+
+.leaflet-menu::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #777;   
+}
+
+.leaflet-menu-close-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14pt;
+    color: #777;
+    cursor: pointer;
+    padding-left: 10px !important;
+    padding-right: 13px !important;
+}
+
+.leaflet-menu-close-button:hover{
+    color: rgb(28,172,120);
+}

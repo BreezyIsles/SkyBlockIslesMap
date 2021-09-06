@@ -58,6 +58,22 @@ L.Control.textbox1 = L.Control.extend({
 	L.control.textbox1 = function(opts) { return new L.Control.textbox1(opts);}
 	L.control.textbox1({ position: 'bottomleft' }).addTo(map);
 
+	L.Control.textbox2 = L.Control.extend({
+		onAdd: function(map) {
+			
+		var text = L.DomUtil.create('div');
+		text.id = "info_text1";
+		text.innerHTML = "<strong><font color='FFFFFF' size = 3px>Thank you to the following for donating:<br>Nobody yet OMEGALUL<font></strong>"
+		return text;
+		},
+
+		onRemove: function(map) {
+			// Nothing to do here
+		}
+	});
+	L.control.textbox2 = function(opts) { return new L.Control.textbox2(opts);}
+	L.control.textbox2({ position: 'bottomright' }).addTo(map);
+
 L.Control.textbox = L.Control.extend({
 		onAdd: function(map) {
 			

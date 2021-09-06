@@ -2386,11 +2386,11 @@
 }
 
 #logoContainer {
-        padding-top: 100px;
-        left: 50%;
-        width: 30em;
-        height: 18em;
-        transform: translate(-50%, -50%);
+        padding-top: 100px !important;
+        left: 50%!important;
+        width: 30em!important;
+        height: 18em!important;
+        transform: translate(-50%, -50%)!important;
         position: fixed;
         margin: 0 auto;
 }

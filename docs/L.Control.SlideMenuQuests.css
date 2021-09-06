@@ -1,43 +1,35 @@
-.leafletfarming-control-slide{
+.leafletquests-control-slide{
     cursor: pointer;
 }
 
-.leafletfarming-menu {
+.leafletquests-menu {
     display: flex !important;
     position: absolute;
     background-color: #121212;
     border: #bb87fc solid 1px;
+    overflow: auto;
     cursor: default;
     z-index: 9999;
     margin: -2px;
     align-content: top !important;
     padding-top: 20px;
-    padding-bottom: 20px !important;
-    color: white;    text-align: center !important;
+    color: white;
+    text-align: center !important;
     font-size: 18px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
-@media only screen and (max-width: 724px) {
-    .leafletfarming-menu {
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-    }
-  }
-
-.leafletfarming-menu::-webkit-scrollbar{
+.leafletquests-menu::-webkit-scrollbar{
     width: 7px;
     height: 7px;
-    background: rgb(187, 134, 245);
+    background: #f2f2f2;
 }
 
-.leafletfarming-menu::-webkit-scrollbar-thumb{
+.leafletquests-menu::-webkit-scrollbar-thumb{
     border-radius: 2px;
     background: #777;   
 }
 
-.leafletfarming-menu-close-button{
+.leafletquests-menu-close-button{
     background-color: transparent;
     border: none;
     font-size: 14pt;
@@ -47,6 +39,6 @@
     padding-right: 13px !important;
 }
 
-.leafletfarming-menu-close-button:hover{
+.leafletquests-menu-close-button:hover{
     color: #9c4dff;
 }

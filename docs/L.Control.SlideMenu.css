@@ -17,17 +17,30 @@
     color: white;
     text-align: center !important;
     font-size: 18px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
+
+@media only screen and (max-width: 724px) {
+    .leaflet-menu {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+  }
 
 .leaflet-menu::-webkit-scrollbar{
     width: 7px;
     height: 7px;
-    background: #f2f2f2;
+    background: rgb(187, 134, 245);
+
+    -webkit-overflow-scrolling: touch;
 }
 
 .leaflet-menu::-webkit-scrollbar-thumb{
     border-radius: 2px;
     background: #777;   
+    -webkit-overflow-scrolling: touch;
 }
 
 .leaflet-menu-close-button{

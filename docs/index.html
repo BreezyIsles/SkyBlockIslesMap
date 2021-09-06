@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="L.Control.SlideMenuWoodcutting.css">
 <link rel="stylesheet" href="L.Control.SlideMenuFarming.css">
 <link rel="stylesheet" href="L.Control.SlideMenuShops.css">
+<link rel="stylesheet" href="L.Control.SlideMenuQuests.css">
 
 <script src="scripts/leaflet/leaflet.js"></script>
 
@@ -26,13 +27,54 @@
 	<script src="L.Control.SlideMenuWoodcutting.js"></script>
 	<script src="L.Control.SlideMenuFarming.js"></script>
 	<script src="L.Control.SlideMenuShops.js"></script>
+	<script src="L.Control.SlideMenuQuests.js"></script>
 
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
 
+<div id="logoContainer"><img src = "maplogo.png" id = "image"></div>
 <script type="text/javascript">
 
 // Declare Map Object
 var map = L.map('map').setView([0, 0], 1);
+
+var mapControlsContainer = document.getElementsByClassName("leaflet-control")[0];
+var logoContainer = document.getElementById("logoContainer");
+
+mapControlsContainer.appendChild(logoContainer);
+
+L.Control.textbox1 = L.Control.extend({
+		onAdd: function(map) {
+			
+		var text = L.DomUtil.create('div');
+		text.id = "info_text1";
+		text.innerHTML = "<strong><font color='FFFFFF'>Credits:<br>Breezy#0999 - Map creation, images, locations<br>Movzes#7430 - Slide menus, images, locations<br>GaminLogan#8047 - Locations<br>SkyBorn#0561 - Locations<br>ethoSSS#9090 - Locations<br>Karluu#6666 - NPC shop locations<font></strong>"
+		return text;
+		},
+
+		onRemove: function(map) {
+			// Nothing to do here
+		}
+	});
+	L.control.textbox1 = function(opts) { return new L.Control.textbox1(opts);}
+	L.control.textbox1({ position: 'bottomleft' }).addTo(map);
+
+L.Control.textbox = L.Control.extend({
+		onAdd: function(map) {
+			
+		var text = L.DomUtil.create('div');
+		text.id = "info_text";
+		text.innerHTML = "<strong><font color='FFFFFF' size = 2px>100% OF DONATIONS GO TO SKYBLOCK ISLES<br>Donations aren't required, but are heavily appreciated. <br>Not only are you supporting me, but your donation is going right back into Isles.<br>If you would like to donate, DM Breezy#0999 on Discord.<br><br><font></strong>"
+		return text;
+		},
+
+		onRemove: function(map) {
+			// Nothing to do here
+		}
+	});
+	L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
+	L.control.textbox({ position: 'bottomleft' }).addTo(map);
+
+
 L.control.slideMenu('<p style="color:#bb86fc;">Fishing</p>' +'<button id="wellButton" onclick="toggleWell()">Well</button>' + '<button id="sardineButton" onclick="toggleSardine()">Sardine</button>' +'<button id="flounderButton" onclick="toggleFlounder()">Flounder</button>' + '<button id="codButton" onclick="toggleCod()">Cod</button>' +
 		'<button id="stoneClamButton" onclick="toggleStoneClam()">Stone Clam</button>' +
 		'<button id="squidButton" onclick="toggleSquid()">Squid</button>' +
@@ -124,13 +166,20 @@ L.control.slideMenuShops('<p style="color:#bb86fc;">NPC Shops</p>' +'<button id=
 		'<button id="bartenderButton" onclick="toggleBartender()">Bartenders</button>' +
 		'<button id="rangedItemsButton" onclick="toggleRangedItems()">Ranged Items</button>' +
 		'<button id="foodButton" onclick="toggleFood()">Food</button>' +
-		'<button id="farmingButton" onclick="toggleFarming()">Farming</button>' +
 		'<button id="magicButton" onclick="toggleMagic()">Magic</button>' +
 		'<button id="weaponsArmorToolsButton" onclick="toggleWeaponsArmorTools()">Weaps/Armor/Tools</button>' +
+		'<button id="artisanButton" onclick="toggleArtisan()">Artisan</button>' +
 		'<button id="generalButton" onclick="toggleGeneral()">General</button>' +
 		'<button id="cookingButton" onclick="toggleCooking()">Cooking</button>' +
 		'<button id="fishingButton" onclick="toggleFishing()">Fishing</button>' +
 		'<button id="oresButton" onclick="toggleOres()">Ores</button>').addTo(map);
+
+L.control.slideMenuQuests('<p style="color:#bb86fc;">Quest NPCs</p>' + '<button id="peacefulButton" onclick="togglePeaceful()">Peaceful</button>' +
+		'<button id="easyButton" onclick="toggleEasy()">Easy</button>' +
+		'<button id="normalButton" onclick="toggleNormal()">Normal</button>' +
+		'<button id="hardButton" onclick="toggleHard()">Hard</button>' +
+		'<button id="hardcoreButton" onclick="toggleHardcore()">Hardcore</button>').addTo(map);
+
 
 // Reference the tiles
 L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
@@ -168,6 +217,27 @@ var farmingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/farmingmarke
 var miningMarker = new markerObj({iconUrl: 'scripts/leaflet/images/miningmarker.png'});
 var woodcuttingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/woodcuttingmarker.png'});
 var volcanoMarker = new markerObj({iconUrl: 'scripts/leaflet/images/volcanomarker.png'});
+
+var armorNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/armor.png'});
+var artisanNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/artisan.png'});
+var bartendersNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/bartenders.png'});
+var cookingNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/cooking.png'});
+var fishingNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/fishing.png'});
+var foodNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/food.png'});
+var gemstonesNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/gemstones.png'});
+var generalNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/general.png'});
+var magicNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/magic.png'});
+var oresNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/ores.png'});
+var rangedItemsNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/rangedItems.png'});
+var toolsNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/tools.png'});
+var weaponsNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/weapons.png'});
+
+var questPeaceful = new markerObj({iconUrl: 'scripts/leaflet/images/quest_peaceful.png'})
+var questEasy = new markerObj({iconUrl: 'scripts/leaflet/images/quest_easy.png'})
+var questNormal = new markerObj({iconUrl: 'scripts/leaflet/images/quest_normal.png'})
+var questHard = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hard.png'})
+var questHardcore = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hardcore.png'})
+
 var volcano = L.marker([-8.537565, -77.475586], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97').addTo(map)
 
 // Fishing Icons //
@@ -248,7 +318,56 @@ var cherryIcon = new markerObj({iconUrl: 'scripts/leaflet/images/farming/fruit/c
 var blackberryIcon = new markerObj({iconUrl: 'scripts/leaflet/images/farming/fruit/blackberry_0.png'});
 var coconutIcon = new markerObj({iconUrl: 'scripts/leaflet/images/farming/fruit/coconut_0.png'});
 
+var acaciaIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/acacia.png'});
+var baobabIcon = new markerObj({iconUrl: 'scripts/leaflet/images//woodcutting/baobab.png'});
+var bedlamIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/bedlam.png'});
+var birchIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/birch.png'});
+var demonIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/demon.png'});
+var dreadknotIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/dreadknot.png'});
+var logIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/log.png'});
+var mahoganyIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/mahogany.png'});
+var oakIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/oak.png'});
+var spruceIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/spruce.png'});
+var willowIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/willow.png'});
 
+//  Quest Markers //
+var breadBaker = L.marker([-32.824211, -33.42041],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Bread Baker - Remy</font></b><br><a href="https://wiki.skyblockisles.com/Bread_Baker">Quest Guide</a>');
+var fishyFindings = L.marker([-37.805444, -6.28418],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Fishy Findings - Fred</font></b><br><a href="https://wiki.skyblockisles.com/Fishy_Findings">Quest Guide</a>');
+var lostKitty = L.marker([-31.372399, -15.754395],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Lost Kitty - Billy</font></b><br><a href="https://wiki.skyblockisles.com/Lost_Kitty">Quest Guide</a>');
+var tourGuide = L.marker([-37.788081, -5.097656],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Tour Guide - Grandpa</font></b><br><a href="https://wiki.skyblockisles.com/Tour_Guide">Quest Guide</a>');
+
+var batControl = L.marker([-17.266728, -23.027344],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Bat Control - Thulbar</font></b><br><a href="https://wiki.skyblockisles.com/Bat_Control">Quest Guide</a>');
+var magicCompost = L.marker([-33.523079, -23.664551],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Magic Compost - Gregory</font></b><br><a href="https://wiki.skyblockisles.com/Magic_Compost">Quest Guide</a>');
+var prankWarsPt1 = L.marker([-19.890723, 39.484863],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Prank Wars Pt. 1 - Winston</font></b><br><a href="https://wiki.skyblockisles.com/Prank_Wars_Pt._1">Quest Guide</a>');
+var sandwichArtist = L.marker([-38.065392, -7.382813],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Sandwich Artist - Faye</font></b><br><a href="https://wiki.skyblockisles.com/Sandwich_Artist">Quest Guide</a>');
+var wizardTower = L.marker([-11.609193, 23.620605],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Wizard Tower - Atlas</font></b><br><a href="https://wiki.skyblockisles.com/Wizard_Tower">Quest Guide</a>');
+
+var animalAmulet = L.marker([-28.748397, -18.676758],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Animal Amulet - Bob</font></b><br><a href="https://wiki.skyblockisles.com/Animal_Amulet">Quest Guide</a>');
+var beaconOfLight = L.marker([2.701635, 25.598145],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Beacon Of Light - Lillybelle</font></b><br><a href="https://wiki.skyblockisles.com/Beacon_Of_Light">Quest Guide</a>');
+var sewerRat = L.marker([-31.709476, -17.006836],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Sewer Rat - Oroku</font></b><br><a href="https://wiki.skyblockisles.com/Sewer_Rat">Quest Guide</a>');
+
+var ancientSeal = L.marker([-9.470736, -77.431641],{icon: questHard}).bindPopup('<b><font color = "FF0000">Ancient Seal - Pyre Door</font></b><br><a href="https://wiki.skyblockisles.com/Ancient Seal">Quest Guide</a>');
+var giantFeast = L.marker([-3.00887, 68.642578],{icon: questHard}).bindPopup('<b><font color = "FF0000">Giant Feast - Rholdal</font></b><br><a href="https://wiki.skyblockisles.com/Giant_Feast">Quest Guide</a>');
+var jormunRock = L.marker([10.941192, 38.71582],{icon: questHard}).bindPopup('<b><font color = "FF0000">Jormun Rock - Jarl</font></b><br><a href="https://wiki.skyblockisles.com/Jormun_Rock">Quest Guide</a>');
+
+var peacefulMarkers = L.layerGroup([breadBaker,
+	fishyFindings,
+	lostKitty,
+	tourGuide]);
+
+var easyMarkers = L.layerGroup([batControl,
+	magicCompost,
+	prankWarsPt1,
+	sandwichArtist,
+	wizardTower]);
+
+var normalMarkers = L.layerGroup([animalAmulet,
+	beaconOfLight,
+	sewerRat]);
+
+var hardMarkers = L.layerGroup([ancientSeal,
+	giantFeast,
+	jormunRock]);
 
 //                //
 // Fishing Markers//
@@ -406,16 +525,91 @@ var farmingSpots = L.layerGroup([wheat1,
 //Woodcutting Markers //
 //                    //
 
-var log1 = L.marker([-35.835628, -11.733398], {icon: woodcuttingMarker}).bindPopup('<b>Log (1)</b>'),
-	birch1 = L.marker([-34.795762, -13.183594], {icon: woodcuttingMarker}).bindPopup('<b>Birch (10)</b>'),
-	oak1 = L.marker([-35.119909, -9.404297], {icon: woodcuttingMarker}).bindPopup('<b>Oak (5)</b>'),
-	spruce1 = L.marker([-37.107765, -9.338379], {icon: woodcuttingMarker}).bindPopup('<b>Spruce (15)</b>'),
-	willow1 = L.marker([-21.412162, -31.948242], {icon: woodcuttingMarker}).bindPopup('<b>Willow (20)</b>'),
-	acacia1 = L.marker([-17.266728, -32.629395], {icon: woodcuttingMarker}).bindPopup('<b>Acacia (30)</b>'),
-	dreadknot1 = L.marker([11.070603, -46.494141], {icon: woodcuttingMarker}).bindPopup('<b>Dreadknot (35)</b>'),
-	mahogany1 = L.marker([22.004175, -1.40625], {icon: woodcuttingMarker}).bindPopup('<b>Mahogany (35)</b>'),
-	baobab1 = L.marker([5.266008, -67.478027], {icon: woodcuttingMarker}).bindPopup('<b>Baobab (50)</b>'),
-	bedlam1 = L.marker([41.211722, 21.313477], {icon: woodcuttingMarker}).bindPopup('<b>Bedlam (60)</b>')
+var log1 = L.marker([-35.835628, -11.733398], {icon: logIcon}).bindPopup('<b>Log (1)</b>'),
+	birch1 = L.marker([-34.795762, -13.183594], {icon: birchIcon}).bindPopup('<b>Birch (10)</b>'),
+	oak1 = L.marker([-35.119909, -9.404297], {icon: oakIcon}).bindPopup('<b>Oak (5)</b>'),
+	spruce1 = L.marker([-37.107765, -9.338379], {icon: spruceIcon}).bindPopup('<b>Spruce (15)</b>'),
+	willow1 = L.marker([-21.412162, -31.948242], {icon: willowIcon}).bindPopup('<b>Willow (20)</b>'),
+	acacia1 = L.marker([-17.266728, -32.629395], {icon: acaciaIcon}).bindPopup('<b>Acacia (30)</b>'),
+	dreadknot1 = L.marker([11.070603, -46.494141], {icon: dreadknotIcon}).bindPopup('<b>Dreadknot (35)</b>'),
+	mahogany1 = L.marker([22.004175, -1.40625], {icon: mahoganyIcon}).bindPopup('<b>Mahogany (35)</b>'),
+	baobab1 = L.marker([5.266008, -67.478027], {icon: baobabIcon}).bindPopup('<b>Baobab (50)</b>'),
+	bedlam1 = L.marker([41.211722, 21.313477], {icon: bedlamIcon}).bindPopup('<b>Bedlam (60)</b>')
+
+//                    //
+//  NPC Shops Markers  //
+//                    //
+
+//Gemstones
+var morgan1 = L.marker([32.898038, 44.714355], {icon: gemstonesNPCMarker}).bindPopup('<b><u>Morgan - Gemstones</u></b><br>Rough Lapis - 120c<br>Lapis - 150c<br>Rough Jade - 200c<br>Jade - 250c<br>Rough Amber - 400c<br>Amber - 500c<br>Rough Pearl - 550c<br>Pearl - 700c<br>Rough Sapphire - 1200c')
+var	khotos1 = L.marker([-12.533115, -52.185059], {icon: gemstonesNPCMarker}).bindPopup('<b><u>Khotos - Gemstones</u></b><br>Rough Lapis - 120c<br>Lapis - 150c<br>Rough Jade - 200c<br>Jade - 250c<br>Rough Amber - 400c<br>Amber - 500c<br>Rough Sapphire - 1200c<br>Rough Diamond - 4375c<br>Rough Emerald - 10500c')
+
+//Bartender
+var jarl1 = L.marker([10.941192, 38.71582], {icon: bartendersNPCMarker}).bindPopup('<b><u>Jarl - Bartender</u></b><br>Ale - 52c<br>Viking Ale - 1087c')
+var jack1 = L.marker([-32.805745, -20.808105], {icon: bartendersNPCMarker}).bindPopup('<b><u>Jack - Bartender</u></b><br>Glass Bottle - 35c<br>Ale - 56c<br>Warfmolo Ale - 1160c')
+
+//Ranged Items
+var naomi1 = L.marker([26.056783, 33.530273], {icon: rangedItemsNPCMarker}).bindPopup('<b><u>Naomi - Ranged Items</u></b><br>Blunderbuss Shot - 88c<br>Bronze Arrow - 4c<br>Bronze Bolt - 6c<br>Iron Arrow - 8c<br>Iron Bolt - 11c<br>Steel Arrow - 22c<br>Steel Bolt - 25c<br>Rhodonite Arrow - 28c<br>Rhodonite Bolt - 36c<br>Mithril Arrow - 72c<br>Mithril Bolt - 88c')
+var rhyri1 = L.marker([-15.156974, -55.239258], {icon: rangedItemsNPCMarker}).bindPopup('<b><u>Rhyri - Ranged Items</u></b><br>Bamboo Blowpipe - 525c<br>Bamboo Dart - 24c<br>Dart Bag - 3150c<br>Bronze Arrow - 4<br>Bronze Bow - 6c<br>Iron Arrow - 8c<br>Iron Bolt - 11c<br>Steel Arrow - 22c<br>Steel Bolt - 25c<br>Rhodonite Arrow - 28c<br>Rhodonite Botl - 36c<br>Mithril Arrow - 72c<br>Mithril Bolt - 88c<br>Adamantium Arrow - 176c<br>Adamantium Bolt - 216c')
+var gump1 = L.marker([-36.809285, -4.394531], {icon: rangedItemsNPCMarker}).bindPopup('<b><u>Gump - Ranged Items</u></b><br>Oak Bow - 80c<br>Bronze Crossbow - 192c<br>Rabbit Quiver - 116c<br>Bronze Bolt Rack - 72c<br>Arrow Shaft - 3c<br>Bronze Arrow - 4c<br>Bronze Bolt - 6c<br>Iron Arrow - 8c<br>Iron Bolt - 11c<br>Steady - 3000c, 1 Jade, 20 Oak Logs, 5 Oak Bark<br>Mithril Arrow - 72c')
+var cartier1 = L.marker([-34.615127, -17.819824], {icon: rangedItemsNPCMarker}).bindPopup('<b><u>Cartier - Ranged Items</u></b><br>Rabbit Hide - 7c<br>Tanned Rabbit Hide - 15c<br>Cow Hide - 22c<br>Tanned Cow Hide - 30c')
+var katla1 = L.marker([8.90678, 44.978027], {icon: rangedItemsNPCMarker}).bindPopup('<b><u>Katla - Ranged Items</u></b><br>Oak Bow Frame - 18c<br>Birch Bow Frame - 48c<br>Spruce Bow Frame - 72c<br>Willow Bow Frame - 81c<br>Flax - 30c<br>Boar Hide - 60c<br>Bronze Arrowhead - 3c<br>Iron Arrowhead - 4c<br>Steel Arrowhead - 15c')
+
+//Food
+var moore1 = L.marker([26.450902, 34.277344], {icon: foodNPCMarker}).bindPopup('<b><u>Moore - Food</u></b><br>Apple - 8c<br>Orange - 16c<br>Coconut - 160c<br>Apple Juice - 240c<br>Orange Juice - 288c')
+var hammond1 = L.marker([27.293689, 17.446289], {icon: foodNPCMarker}).bindPopup('<b><u>Hammond - Food</u></b><br>Ale - 56c<br>Grilled Rabbit - 22c<br>Grilled Bear Steak - 200c<br>Bacon & Eggs - 56c<br>Grilled Cheese - 96c<br>Tomato Soup - 112c')
+var khrag1 = L.marker([-16.172473, -49.416504], {icon: foodNPCMarker}).bindPopup('<b><u>Khrag - BANANASSS</u></b><br>Banana - 40c<br>Banana Bread Slice - 48c')
+
+
+
+//Magic
+var zorkov1 = L.marker([-12.597455, -84.04541], {icon: magicNPCMarker}).bindPopup('<b><u>Zorkov - Magic</u></b><br>Apprentice Rune - 8c<br>Air Rune - 8c<br>Earth Rune - 8c<br>Water Rune - 8c<br>Fire Rune - 8c<br>Dark Rune - 48c<br>Blood Rune - 160c<br>Chrono Rune - 200c')
+var elynis1 = L.marker([3.00887, 25.444336], {icon: magicNPCMarker}).bindPopup('<b><u>Elynis - Magic</u></b><br>Apprentice Rune - 8c<br>Air Rune - 8c<br>Earth Rune - 8c<br>Water Rune - 8c<br>Fire Rune - 8c<br>Dream Rune - 80c<br>Cosmic Rune - 120c<br>Chrono Rune - 200c')
+var bludalf1 = L.marker([-35.047987, -15.095215], {icon: magicNPCMarker}).bindPopup('<b><u>Bludalf - Magic</u></b><br>Apprentice Wand - 262c<br>Apprentice Pouch - 190c<br> Apprentice Rune - 8c<br>Air Rune - 8c<br>Earth Rune - 8c<br>Water Rune - 8c<br>Fire Rune - 8c<br>Dark Rune - 48c')
+var tiffany1 = L.marker([-34.615127, -17.819824], {icon: magicNPCMarker}).bindPopup('<b><u>Tiffany - Magic</u></b><br>Wool - 7c<br>Yarn - 15c<br>Enchanted Wool - 22c<br>Tanned Cow Hide - 30c')
+var luna1 = L.marker([25.542441, 4.724121], {icon: magicNPCMarker}).bindPopup('<b><u>Luna - Mirror Shield</u></b><br>Mirror Shield - 13337c, 1 Sapphire, 10 Glass Pane')
+
+//Weapons/Armor/Tools
+var kwai1 = L.marker([-9.384032, -74.333496], {icon: weaponsNPCMarker}).bindPopup('<b><u>Kwai - Weapons</u></b><br>Bronze Spear - 65c<br>Iron Spear - 120c<br>Steel Spear - 280c<br>Rhodonite Spear - 753c<br>Mithril Spear - 2485c<br>Adamantium Spear - 7966c')
+var edric1 = L.marker([-33.596319, -6.899414], {icon: weaponsNPCMarker}).bindPopup('<b><u>Edric - Weapons</u></b><br>Bronze Sword - 65c<br>Bronze Battleaxe - 97c<br>Bronze Spear - 65c<br>Iron Sword - 120c<br>Iron Battleaxe - 169c<br>Iron Spear - 120c<br>Steel Sword - 280c<br>Steel Battleaxe - 475c<br>Steel Spear - 280c')
+var kyo1 = L.marker([-10.033767, -73.037109], {icon: armorNPCMarker}).bindPopup('<b><u>Kyo - Armor</u></b><br>Bronze Sword - 65c<br>Bronze Battleaxe - 97c<br>Bronze Spear - 65c<br>Iron Sword - 120c<br>Iron Battleaxe - 169c<br>Iron Spear - 120c<br>Steel Sword - 280c<br>Steel Battleaxe - 475c<br>Steel Spear - 280c')
+var grayson1 = L.marker([-33.596319, -6.899414], {icon: armorNPCMarker}).bindPopup('<b><u>Grayson - Armor/Weapons</u></b><br>Bronze Helmet - 51c<br>Bronze Chestplate - 140c<br>Bronze Leggings - 150c<br>Bronze Boots - 46c<br>Bronze Shield - 78c<br>Bronze Bracers - 25c<br>Bronze Dagger - 68c<br>Bronze Arrowhead - 3c<br>Bronze Bolt Spike - 4c<br>Iron Helmet - 3c<br>Iron Chestplate - 220c<br>Iron Leggings - 166c<br>Iron Boots - 72c<br>Iron Shield - 121c<br>Iron Bracers - 40c<br>Iron Dagger - 124c<br>Iron Arrowhead - 4c<br>Iron Bolt Spike - 8c')
+var zorander1 = L.marker([25.720735, 32.563477], {icon: weaponsNPCMarker}).bindPopup('<b><u>Zorander - Weapons</u></b><br>Bronze Sword - 65c<br>Iron Sword - 120c<br>Steel Sword - 280c<br>Rhodonite Sword - 753c<br>Mithril Sword - 2485c<br>Adamantium Sword - 7966c')
+var thulbur1 = L.marker([-17.308688, -22.983398], {icon: toolsNPCMarker}).bindPopup('<b><u>Thulbur - Tools</u></b><br>Bronze Pickaxe - 62c<br>Iron Pickaxe - 113c<br>Steel Pickaxe - 268c<br>Rhodonite Pickaxe - 720c')
+var gibraltur1 = L.marker([-32.379961, -13.579102], {icon: toolsNPCMarker}).bindPopup('<b><u>Gibraltur - Tools</u></b><br>Hammer - 16c<br>Bronze Pickaxe - 62c<br>Bronze Hatchet - 62c<br>Bronze Scythe - 62c<br>Bronze Bar - 19c<br>Iron Bar - 28')
+var bjorg1 = L.marker([12.747516, 43.967285], {icon: weaponsNPCMarker}).bindPopup('<b><u>Bjorg - Weapons/Tools</u></b><br>Bronze Hatchet - 58c<br>Iron Hatchet - 106c<br>Steel Hatchet - 252c<br>Rhodonite Hatchet - 720c<br>Bronze Battleaxe - 91c<br>Iron Battleaxe - 159c<br>Steel Battleaxe - 445c<br>Rhodonite Battleaxe - 1260c')
+var fromund1 = L.marker([14.753635, 47.680664], {icon: armorNPCMarker}).bindPopup('<b><u>Fromund - Armor</u></b><br>Bronze Helmet - 48c<br>Iron Helmet - 75c<br>Steel Helmet - 310c<br>Bronze Chestplate - 132c<br>Iron Chestplate - 207c<br>Steel Chestplaye - 861c<br>Bronze Leggings - 99c<br>Iron Leggings - 156c<br>Steel Leggings - 648c<br>Bronze Boots - 43c<br>Iron Boots - 67c<br>Steel Boots - 283c<br>Bronze Shield - 73c<br>Iron Shield - 114c<br>Steel Shield - 475c<br>Bronze Bracer - 24c<br>Iron Bracers - 37c<br>Steel Bracers - 156c')
+
+//Artisan
+var vera1 = L.marker([-36.368222, -15.952148], {icon: artisanNPCMarker}).bindPopup('<b><u>Vera - Artisan</u></b><br>Sculpting Tool - 30c<br>Glass Blower - 45c<br>Pestle & Mortar - 60c<br>Clay - 12c<br>Bowl - 15c<br>Brick - 37c<br>Glass Bottle - 33c<br>Oak Handle - 28c<br>Rough Lapis - 90c')
+
+//General
+var juro1 = L.marker([-12.533115, -74.003906], {icon: generalNPCMarker}).bindPopup('<b><u>Juro - General</u></b><br>Bread - 19c<br>Apple - 8c<br>Knife - 16c<br>Chisel - 24c<br>Needle - 24c<br>Shovel - 40c<br>Bucket - 35c<br>Tiny Backpack - 1920c')
+var andrei1 = L.marker([-31.615966, -15.534668], {icon: generalNPCMarker}).bindPopup('<b><u>Andrei - General</u></b><br>Bread - 19c<br>Apple - 8c<br>Knife - 16c<br>Chisel - 24c<br>Needle - 24c<br>Shovel - 40c<br>Bucket - 35c<br>Tiny Backpack - 1920c')
+var omai1 = L.marker([-17.476432, -50.932617], {icon: generalNPCMarker}).bindPopup('<b><u>Omai - General</u></b><br>Cocoa Beans - 56c<br>Banana Bread Slice - 48c<br>Magic Tablet - 64c<br>Raw Lava Eel - 184c<br>Pyre Paste - 170c<br>Arcane Yarn - 1000c')
+var hughy1 = L.marker([-21.963425, -17.709961], {icon: generalNPCMarker}).bindPopup('<b><u>Hughy - General</u></b><br>Rope - 67c<br>Ring Mold - 18c<br>Necklace Mold - 75c<br>Amulet Mold - 90c')
+var hobbes1 = L.marker([24.086589, 39.440918], {icon: generalNPCMarker}).bindPopup('<b><u>Hobbes - General</u></b><br>Bread - 19c<br>Apple - 8c<br>Knife - 16c<br>Chisel - 24c<br>Needle - 24c<br>Shovel - 40c<br>Bucket - 35c<br>Tiny Backpack - 1920c')
+var alrik1 = L.marker([9.644077, 36.408691], {icon: generalNPCMarker}).bindPopup('<b><u>Alrik - General</u></b><br>Bread - 19c<br>Apple - 8c<br>Knife - 16c<br>Chisel - 24c<br>Needle - 24c<br>Shovel - 40c<br>Bucket - 35c<br>Tiny Backpack - 1920c')
+var waleran1 = L.marker([-4.258768, -7.053223], {icon: generalNPCMarker}).bindPopup('<b><u>Waleran - General</u></b><br>Tanned Fox Hide - 48c<br>Raw Beef - 28c<br>Salt - 48c<br>Cherry - 80c<br>Raw Salmon - 72c<br>Raw Sea Snake - 168c')
+
+//Cooking
+var faye1 = L.marker([-37.892196, -7.44873], {icon: cookingNPCMarker}).bindPopup('<b><u>Faye - Cooking</u></b><br>Flour - 8c<br>Egg - 8c<br>Butter - 38c<br>Cheese - 64c<br>Sugar - 64c<br>Milk Bucket - 28c<br>Bowl  - 16c<br>Pot - 32c<br>Pan - 24c')
+var hartford1 = L.marker([27.547242, 28.234863], {icon: cookingNPCMarker}).bindPopup('<b><u>Hartford - Cooking</u></b><br>Flour - 8c<br>Egg - 8c<br>Milk Bucket - 28c<br>Butter - 38c<br>Salt - 48c<br>Sugar - 64c<br>Cheese - 64c<br>Pumpkin Pie Slice - 136c<br>Seahorse Stew - 240c<br>Starfish Pie Slice - 104c')
+var flora1 = L.marker([-33.559707, -15.358887], {icon: cookingNPCMarker}).bindPopup('<b><u>Flora - Cooking</u></b><br>Wheat - 8c<br>Potato - 14c<br>Carrot - 28c<br>Beet - 64c')
+var remy1 = L.marker([-32.7688, -33.442383], {icon: cookingNPCMarker}).bindPopup('<b><u>Remy - Cooking</u></b><br>Flour - 8c<br>Dough - 12c<br>Bread - 19c<br>Butter - 38c<br>Cheese - 64c<br>Sugar - 64c<br>Chocolate - 200c<br>Carrot Cake Slice - 64c<br>Pan - 24c')
+var ivan1 = L.marker([-34.143635, -14.677734], {icon: cookingNPCMarker}).bindPopup('<b><u>Ivan - Cooking</u></b><br>Raw Chicken - 19c<br>Raw Pork Chop - 24c<br>Raw Beef - 28c<br>Raw Mutton - 64c<br>Raw Duck - 32c')
+var ozaka1 = L.marker([-13.94473, -77.34375], {icon: cookingNPCMarker}).bindPopup('<b><u>Ozaka - Cooking</u></b><br>Banana - 40c<br>Garlic - 76c<br>Bamboo - 80c<br>Pyre Pepper - 104c')
+
+//Fishing
+var saben1 = L.marker([26.135714, 32.980957], {icon: fishingNPCMarker}).bindPopup('<b><u>Saben - Fishing</u></b><br>Lapis Fishing Net - 525c<br>Oak Fishing Rod - 150c<br>Bronze Fishing Spear - 75c<br>Worms - 4c<br>Chum - 7c')
+var fred1 = L.marker([-37.68382, -6.218262], {icon: fishingNPCMarker}).bindPopup('<b><u>Fred - Fishing</u></b><br>Fishing Net - 16c<br>Fishing Rod - 40c<br>Fishing Spear - 88c<br>Worms - 4c<br>Chum - 8c')
+var severin1 = L.marker([-37.230328, -5.317383], {icon: fishingNPCMarker}).bindPopup('<b><u>Severin - Fishing</u></b><br>Worms - 4c<br>Chum - 8c<br>Feather - 4c')
+var dalton1 = L.marker([-38.341656, -13.007812], {icon: fishingNPCMarker}).bindPopup('<b><u>Dalton - Fishing</u></b><br>Fishing Basket - 64c<br>Lure - 8c<br>Chum - 8c<br>Stone Chum - 40c<br>Raw Flounder - 14c<br>Raw Cod - 38c<br>Raw Squid - 60c')
+var azanore1 = L.marker([-14.285677, -81.914063], {icon: fishingNPCMarker}).bindPopup('<b><u>Azanore - Fishing</u></b><br>Raw Shrimp - 28c<br>Raw Squid - 60c<br>Raw Seahorse - 105c<br>Raw Pufferfish - 112c<br>Fishing Rod - 40c<br>Fishing Spear - 88c<br>Fishing Net - 16c<br>Lure - 8c<br>Feather - 4c')
+
+//Ores
+var muldrio1 = L.marker([-13.923404, -56.755371], {icon: oresNPCMarker}).bindPopup('<b><u>Muldrio - Ores</u></b><br>Coal - 24c<br>Iron Ore - 19c<br>Nickel Ore - 32c<br>Rhodonite Ore - 150c<br>Mithril Ore - 625c<br>Adamantium Ore - 2275c<br>Crimson Ore - 3600c')
+
 
 var woodcuttingSpots = L.layerGroup([log1,
 	birch1,
@@ -502,7 +696,333 @@ var woodcutting = document.getElementById("woodcuttingButton"),
 		baobab = document.getElementById("baobabButton"),
 		bedlam = document.getElementById("bedlamButton")
 
+var gemstones = document.getElementById("gemstonesButton"),
+	bartender = document.getElementById("bartenderButton"),
+	rangedItems = document.getElementById("rangedItemsButton"),
+	food = document.getElementById("foodButton"),
+	farming = document.getElementById("farmingButton"),
+	magic = document.getElementById("magicButton"),
+	weaponsArmorToolsButton = document.getElementById("weaponsArmorToolsButton"),
+	artisan = document.getElementById("artisanButton"),
+	general = document.getElementById("generalButton"),
+	cooking = document.getElementById("cookingButton"),
+	fishing = document.getElementById("fishingButton"),
+	ores = document.getElementById("oresButton")
 
+function togglePeaceful()
+{
+	var peacefulB = document.getElementById("peacefulButton")
+	if(map.hasLayer(peacefulMarkers))
+	{
+		peacefulB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(peacefulMarkers);	
+	}
+	else
+	{
+		peacefulB.style.backgroundColor = 'rgb(187, 134, 245)';
+		peacefulMarkers.addTo(map);
+	}
+}
+
+function toggleEasy()
+{
+	var easyB = document.getElementById("easyButton")
+	if(map.hasLayer(easyMarkers))
+	{
+		easyB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(easyMarkers);	
+	}
+	else
+	{
+		easyB.style.backgroundColor = 'rgb(187, 134, 245)';
+		easyMarkers.addTo(map);
+	}
+}
+
+function toggleNormal()
+{
+	var normalB = document.getElementById("normalButton")
+	if(map.hasLayer(normalMarkers))
+	{
+		normalB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(normalMarkers);	
+	}
+	else
+	{
+		normalB.style.backgroundColor = 'rgb(187, 134, 245)';
+		normalMarkers.addTo(map);
+	}
+}
+
+function toggleHard()
+{
+	var hardB = document.getElementById("hardButton")
+	if(map.hasLayer(hardMarkers))
+	{
+		hardB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(hardMarkers);	
+	}
+	else
+	{
+		hardB.style.backgroundColor = 'rgb(187, 134, 245)';
+		hardMarkers.addTo(map);
+	}
+}
+
+
+
+
+
+function toggleGemstones()
+{
+	var gemstonesB = document.getElementById("gemstonesButton")
+	if(map.hasLayer(khotos1))
+	{
+		gemstonesB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(khotos1);
+		map.removeLayer(morgan1);	
+	}
+	else
+	{
+		gemstonesB.style.backgroundColor = 'rgb(187, 134, 245)';
+		khotos1.addTo(map);
+		morgan1.addTo(map);
+	}
+}
+
+function toggleBartender()
+{
+	var bartenderB = document.getElementById("bartenderButton")
+	if(map.hasLayer(jarl1))
+	{
+		bartenderB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(jarl1);
+		map.removeLayer(jack1);	
+	}
+	else
+	{
+		bartenderB.style.backgroundColor = 'rgb(187, 134, 245)';
+		jarl1.addTo(map);
+		jack1.addTo(map);
+	}
+}
+
+function toggleRangedItems()
+{
+	var rangedItemsB = document.getElementById("rangedItemsButton")
+	if(map.hasLayer(naomi1))
+	{
+		rangedItemsB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(naomi1);
+		map.removeLayer(rhyri1);
+		map.removeLayer(gump1);	
+		map.removeLayer(cartier1);
+		map.removeLayer(katla1);
+	}
+	else
+	{
+		rangedItemsB.style.backgroundColor = 'rgb(187, 134, 245)';
+		naomi1.addTo(map);
+		rhyri1.addTo(map);
+		gump1.addTo(map);
+		cartier1.addTo(map);
+		katla1.addTo(map);
+	}
+}
+
+function toggleFood()
+{
+	var foodB = document.getElementById("foodButton")
+	if(map.hasLayer(moore1))
+	{
+		foodB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(moore1);
+		map.removeLayer(hammond1);
+		map.removeLayer(khrag1);
+	}
+	else
+	{
+		foodB.style.backgroundColor = 'rgb(187, 134, 245)';
+		moore1.addTo(map);
+		hammond1.addTo(map);
+		khrag1.addTo(map);
+	}
+}
+
+function toggleFarming()
+{
+	var farmingB = document.getElementById("farmingButton")
+	if(map.hasLayer(ozaka1))
+	{
+		farmingB.style.backgroundColor = 'rgb(41, 41, 41)';
+		
+
+	}
+	else
+	{
+		farmingB.style.backgroundColor = 'rgb(187, 134, 245)';
+		ozaka1.addTo(map);
+	}
+}
+
+function toggleMagic()
+{
+	var magicB = document.getElementById("magicButton")
+	if(map.hasLayer(zorkov1))
+	{
+		magicB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(zorkov1);
+		map.removeLayer(elynis1);
+		map.removeLayer(bludalf1);
+		map.removeLayer(tiffany1);
+		map.removeLayer(luna1);
+	}
+	else
+	{
+		magicB.style.backgroundColor = 'rgb(187, 134, 245)';
+		zorkov1.addTo(map);
+		elynis1.addTo(map);
+		bludalf1.addTo(map);
+		tiffany1.addTo(map);
+		luna1.addTo(map);
+	}
+}
+
+function toggleWeaponsArmorTools()
+{
+	var weaponsArmorToolsB = document.getElementById("weaponsArmorToolsButton")
+	if(map.hasLayer(kwai1))
+	{
+		weaponsArmorToolsB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(kwai1);
+		map.removeLayer(edric1);
+		map.removeLayer(kyo1);
+		map.removeLayer(grayson1);
+		map.removeLayer(zorander1);
+		map.removeLayer(thulbur1);
+		map.removeLayer(gibraltur1);
+		map.removeLayer(bjorg1);
+		map.removeLayer(fromund1);
+	}
+	else
+	{
+		weaponsArmorToolsB.style.backgroundColor = 'rgb(187, 134, 245)';
+		kwai1.addTo(map);
+		edric1.addTo(map);
+		kyo1.addTo(map);
+		grayson1.addTo(map);
+		zorander1.addTo(map);
+		thulbur1.addTo(map);
+		gibraltur1.addTo(map);
+		bjorg1.addTo(map);
+		fromund1.addTo(map);
+	}
+}
+
+function toggleArtisan()
+{
+	var artisanB = document.getElementById("artisanButton")
+	if(map.hasLayer(vera1))
+	{
+		artisanB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(vera1);
+	}
+	else
+	{
+		artisanB.style.backgroundColor = 'rgb(187, 134, 245)';
+		vera1.addTo(map);
+	}
+}
+
+function toggleGeneral()
+{
+	var generalB = document.getElementById("generalButton")
+	if(map.hasLayer(juro1))
+	{
+		generalB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(juro1);
+		map.removeLayer(andrei1);
+		map.removeLayer(omai1);
+		map.removeLayer(hughy1);
+		map.removeLayer(hobbes1);
+		map.removeLayer(alrik1);
+		map.removeLayer(waleran1);
+	}
+	else
+	{
+		generalB.style.backgroundColor = 'rgb(187, 134, 245)';
+		juro1.addTo(map);
+		andrei1.addTo(map);
+		omai1.addTo(map);
+		hughy1.addTo(map);
+		hobbes1.addTo(map);
+		alrik1.addTo(map);
+		waleran1.addTo(map);
+	}
+}
+
+function toggleCooking()
+{
+	var cookingB = document.getElementById("cookingButton")
+	if(map.hasLayer(faye1))
+	{
+		cookingB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(faye1);
+		map.removeLayer(hartford1);
+		map.removeLayer(flora1);
+		map.removeLayer(remy1);
+		map.removeLayer(ivan1);
+		map.removeLayer(ozaka1);
+	}
+	else
+	{
+		cookingB.style.backgroundColor = 'rgb(187, 134, 245)';
+		faye1.addTo(map);
+		hartford1.addTo(map);
+		flora1.addTo(map);
+		remy1.addTo(map);
+		ivan1.addTo(map);
+		ozaka1.addTo(map)
+	}
+}
+
+function toggleFishing()
+{
+	var fishingB = document.getElementById("fishingButton")
+	if(map.hasLayer(saben1))
+	{
+		fishingB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(saben1);
+		map.removeLayer(fred1);
+		map.removeLayer(severin1);
+		map.removeLayer(dalton1);
+		map.removeLayer(azanore1);
+	}
+	else
+	{
+		fishingB.style.backgroundColor = 'rgb(187, 134, 245)';
+		saben1.addTo(map);
+		fred1.addTo(map);
+		severin1.addTo(map);
+		dalton1.addTo(map);
+		azanore1.addTo(map);
+	}
+}
+
+function toggleOres()
+{
+	var oresB = document.getElementById("oresButton")
+	if(map.hasLayer(muldrio1))
+	{
+		oresB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(muldrio1);
+	}
+	else
+	{
+		oresB.style.backgroundColor = 'rgb(187, 134, 245)';
+		muldrio1.addTo(map);
+	}
+}
 
 function toggleAir()
 {
@@ -2034,23 +2554,6 @@ function toggleCoconut()
 		coconut1.addTo(map);
 	}
 }
-
-function toggleCoconut()
-{
-	var coconutB = document.getElementById("coconutButton")
-	if(map.hasLayer(coconut1))
-	{
-		coconutB.style.backgroundColor = 'rgb(41, 41, 41)';
-		map.removeLayer(coconut1);		
-	}
-	else
-	{
-		coconutB.style.backgroundColor = 'rgb(187, 134, 245)';
-		coconut1.addTo(map);
-	}
-}
-
-
 
 
 map.on('click', function(e) {

@@ -2165,6 +2165,28 @@
     cursor: pointer;
 }
 
+#artisanButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#artisanButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #generalButton{
     display: inherit;
     align-items: center;
@@ -2252,3 +2274,132 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+#peacefulButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#peacefulButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#easyButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#easyButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#normalButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#normalButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#hardButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#hardButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#hardcoreButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 310px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#hardcoreButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#logoContainer {
+        padding-top: 100px;
+        left: 50%;
+        width: 30em;
+        height: 18em;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        margin: 0 auto;
+}
+
+#image {  
+display: block;  
+margin-left: auto;  
+margin-right: auto; 
+padding: 5px;
+width: 200px;
+height:100px; 
+}  

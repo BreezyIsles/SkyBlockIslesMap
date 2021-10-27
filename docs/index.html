@@ -17,6 +17,7 @@
 
 <link rel="stylesheet" href="scripts/leaflet/leaflet.css">
 <link rel="stylesheet" href="buttons.css">
+<link rel="stylesheet" href="tooltips.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="L.Control.SlideMenu.css">
 <link rel="stylesheet" href="L.Control.SlideMenuAlchemy.css">
@@ -37,6 +38,7 @@
 	<script src="L.Control.SlideMenuFarming.js"></script>
 	<script src="L.Control.SlideMenuShops.js"></script>
 	<script src="L.Control.SlideMenuQuests.js"></script>
+	<script src="L.Control.ToggleButton.js"></script>
 
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
 
@@ -99,6 +101,8 @@ L.Control.textbox = L.Control.extend({
 	L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
 	L.control.textbox({ position: 'bottomleft' }).addTo(map);
 
+
+L.control.toggleButton(toggleLocationMarkers, { icon: 'fa fa-font fa-lg' }).addTo(map);
 
 L.control.slideMenu('<p style="color:#bb86fc;">Fishing</p>' +'<button id="wellButton" onclick="toggleWell()">Well</button>' + '<button id="sardineButton" onclick="toggleSardine()">Sardine</button>' +'<button id="flounderButton" onclick="toggleFlounder()">Flounder</button>' + '<button id="codButton" onclick="toggleCod()">Cod</button>' +
 		'<button id="stoneClamButton" onclick="toggleStoneClam()">Stone Clam</button>' +
@@ -634,6 +638,20 @@ var azanore1 = L.marker([-14.285677, -81.914063], {icon: fishingNPCMarker}).bind
 
 //Ores
 var muldrio1 = L.marker([-13.923404, -56.755371], {icon: oresNPCMarker}).bindPopup('<b><u>Muldrio - Ores</u></b><br>Coal - 24c<br>Iron Ore - 19c<br>Nickel Ore - 32c<br>Rhodonite Ore - 150c<br>Mithril Ore - 625c<br>Adamantium Ore - 2275c<br>Crimson Ore - 3600c')
+
+var locationMarkers = [
+	(new L.marker([-35.047987, -15.095215], { opacity: 0.0 })).bindTooltip("Wharfmolo",      { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([-19.539297, -24.411621], { opacity: 0.0 })).bindTooltip("Dwarven mines",  { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([-12.537565, -79.475586], { opacity: 0.0 })).bindTooltip("The Pyre",       { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([-36.000000,  26.500000], { opacity: 0.0 })).bindTooltip("Trials plaza",   { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([-12.017830,  23.620605], { opacity: 0.0 })).bindTooltip("Wizard's tower", { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([ 10.747516,  42.967285], { opacity: 0.0 })).bindTooltip("Skygaror",       { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([  1.230374,  57.458496], { opacity: 0.0 })).bindTooltip("Viridian mines", { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([ -3.230374,  70.458496], { opacity: 0.0 })).bindTooltip("Gigarhogar",     { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([ 25.720735,  32.563477], { opacity: 0.0 })).bindTooltip("Tortuga",        { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([ 35.720735,  22.563477], { opacity: 0.0 })).bindTooltip("Mount snjor",    { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] }),
+	(new L.marker([ 25.065697, -10.019531], { opacity: 0.0 })).bindTooltip("Treasure trove", { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 25] })
+];
 
 
 var woodcuttingSpots = L.layerGroup([log1,
@@ -2577,6 +2595,17 @@ function toggleCoconut()
 	{
 		coconutB.style.backgroundColor = 'rgb(187, 134, 245)';
 		coconut1.addTo(map);
+	}
+}
+
+function toggleLocationMarkers()
+{
+	for (let marker of locationMarkers)
+	{
+		if (map.hasLayer(marker))
+			marker.removeFrom(map);
+		else
+			marker.addTo(map);
 	}
 }
 

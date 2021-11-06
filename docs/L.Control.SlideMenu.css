@@ -21,6 +21,10 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.leaflet-top.leaflet-right .leaflet-control-layers:nth-child(1) .leaflet-control-layers-toggle {
+    background-image: "scripts/leaflet/images/miningIcon.png"
+}
+
 @media only screen and (max-width: 724px) {
     .leaflet-menu {
         padding-top: 0px;

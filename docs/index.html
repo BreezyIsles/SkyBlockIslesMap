@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="L.Control.SlideMenuFarming.css">
 <link rel="stylesheet" href="L.Control.SlideMenuShops.css">
 <link rel="stylesheet" href="L.Control.SlideMenuQuests.css">
-
+<link rel="stylesheet" href="L.Control.SlideMenuCredits.css">
 <script src="scripts/leaflet/leaflet.js"></script>
 
 </head>
@@ -38,6 +38,7 @@
 	<script src="L.Control.SlideMenuFarming.js"></script>
 	<script src="L.Control.SlideMenuShops.js"></script>
 	<script src="L.Control.SlideMenuQuests.js"></script>
+	<script src="L.Control.SlideMenuCredits.js"></script>
 	<script src="L.Control.ToggleButton.js"></script>
 
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
@@ -46,6 +47,10 @@
 <script src = "locationNames.js"></script>
 <script src = "fishingLocations.js"></script>
 <script src = "alchemyLocations.js"></script>
+<script src = "miningLocations.js"></script>
+<script src = "woodcuttingLocations.js"></script>
+<script src = "farmingLocations.js"></script>
+<script src = "questLocations.js"></script>
 <script type="text/javascript">
 
 // Declare Map Object
@@ -70,9 +75,9 @@ L.Control.textbox1 = L.Control.extend({
 		}
 	});
 	L.control.textbox1 = function(opts) { return new L.Control.textbox1(opts);}
-	L.control.textbox1({ position: 'bottomleft' }).addTo(map);
+	L.control.textbox1({ position: 'bottomleft' });
 
-L.control.toggleButton(toggleLocationMarkers, { icon: 'fa fa-font fa-lg' }).addTo(map);
+L.control.toggleButton(toggleLocationMarkers, { icon: 'fa fa-map-marker' }).addTo(map);
 
 L.control.slideMenu('<p style="color:#bb86fc;">Fishing</p>' +'<button id="wellButton" onclick="toggleWell()">Well</button>' + '<button id="sardineButton" onclick="toggleSardine()">Sardine</button>' +'<button id="flounderButton" onclick="toggleFlounder()">Flounder</button>' + '<button id="codButton" onclick="toggleCod()">Cod</button>' +
 		'<button id="stoneClamButton" onclick="toggleStoneClam()">Stone Clam</button>' +
@@ -107,11 +112,11 @@ L.control.slideMenuAlchemy('<p style="color:#bb86fc;">Alchemy</p>' + '<button id
 		'<button id="alchemyButton" onclick="toggleAlchemy()">Alchemy Table</button>' +
 		'<button id="enchantmentButton" onclick="toggleEnchantment()">Enchantment Table</button>').addTo(map);
 
-L.control.slideMenuMining('<p style="color:#bb86fc;">Mining</p>' + '<button id="pyreFumaroleButton" onclick="togglePyreFumarole()">Pyre Fumarole</button>').addTo(map);
+L.control.slideMenuMining('<p style="color:#bb86fc;">Mining</p>' + '<button id="pyreFumaroleButton" onclick="togglePyreFumarole()">Pyre Fumarole</button>' + '<button id="dwarvenButton" onclick="toggleDwarven()">Dwarven Mine</button>' + '<button id="clayButton" onclick="toggleClayQuarry()">Clay Quarry</button>' + '<button id="viridianButton" onclick="toggleViridian()">Viridian Mines</button>' + '<button id="treasureButton" onclick="toggleTreasure()">Treasure Trench</button>' + '<button id="forsakenButton" onclick="toggleForsaken()">Forsaken Mine</button>' + '<button id="sjnorButton" onclick="toggleSnjor()">Mount Snjor</button>' + '<button id="wizardButton" onclick="toggleWizard()">Wizard Tower</button>' + '<button id="graniteButton" onclick="toggleGranite()">Granite Ravine</button>' + '<button id="tortugaButton" onclick="toggleTortuga()">Tortuga</button>').addTo(map);
 
 L.control.slideMenuWoodcutting('<p style="color:#bb86fc;">Woodcutting</p>' + '<button id="logButton" onclick="toggleLog()">Log</button>' +
-		'<button id="birchButton" onclick="toggleBirch()">Birch</button>' +
 		'<button id="oakButton" onclick="toggleOak()">Oak</button>' +
+		'<button id="birchButton" onclick="toggleBirch()">Birch</button>' +
 		'<button id="spruceButton" onclick="toggleSpruce()">Spruce</button>' +
 		'<button id="willowButton" onclick="toggleWillow()">Willow</button>' +
 		'<button id="acaciaButton" onclick="toggleAcacia()">Acacia</button>' +
@@ -144,7 +149,7 @@ L.control.slideMenuFarming('<p style="color:#bb86fc;">Farming</p>' + '<button id
 		'<button id="blackberryButton" onclick="toggleBlackberry()">Blackberry</button>' +
 		'<button id="coconutButton" onclick="toggleCoconut()">Coconut</button>').addTo(map);
 
-L.control.slideMenuShops('<p style="color:#bb86fc;">NPC Shops</p>' +'<button id="gemstonesButton" onclick="toggleGemstones()">Gemstones</button>' +
+/*L.control.slideMenuShops('<p style="color:#bb86fc;">NPC Shops</p>' +'<button id="gemstonesButton" onclick="toggleGemstones()">Gemstones</button>' +
 		'<button id="bartenderButton" onclick="toggleBartender()">Bartenders</button>' +
 		'<button id="rangedItemsButton" onclick="toggleRangedItems()">Ranged Items</button>' +
 		'<button id="foodButton" onclick="toggleFood()">Food</button>' +
@@ -155,13 +160,14 @@ L.control.slideMenuShops('<p style="color:#bb86fc;">NPC Shops</p>' +'<button id=
 		'<button id="cookingButton" onclick="toggleCooking()">Cooking</button>' +
 		'<button id="fishingButton" onclick="toggleFishing()">Fishing</button>' +
 		'<button id="oresButton" onclick="toggleOres()">Ores</button>').addTo(map);
-
+*/
 L.control.slideMenuQuests('<p style="color:#bb86fc;">Quest NPCs</p>' + '<button id="peacefulButton" onclick="togglePeaceful()">Peaceful</button>' +
 		'<button id="easyButton" onclick="toggleEasy()">Easy</button>' +
 		'<button id="normalButton" onclick="toggleNormal()">Normal</button>' +
 		'<button id="hardButton" onclick="toggleHard()">Hard</button>' +
 		'<button id="hardcoreButton" onclick="toggleHardcore()">Hardcore</button>').addTo(map);
 
+L.control.slideMenuCredits('<p style="color:#bb86fc;">Credits:</p><br><h1 style="font-size:0.8vw">Breezy<br>Movzes<br>GaminLogan<br>SkyBorn<br>ethoSSS<br>Karluu<br>Narwhal<br>chrisstar123<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Feel free to <br>message Breezy#0999 <br>with <br>any suggestions <br>or <br>concerns<font></strong></h1>').addTo(map);
 
 // Reference the tiles
 L.tileLayer('https://map.skyblockisles.com/tiles/{z}/{x}/{y}.jpg', {
@@ -199,6 +205,7 @@ var farmingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/farmingmarke
 var miningMarker = new markerObj({iconUrl: 'scripts/leaflet/images/miningmarker.png'});
 var woodcuttingMarker = new markerObj({iconUrl: 'scripts/leaflet/images/woodcuttingmarker.png'});
 var volcanoMarker = new markerObj({iconUrl: 'scripts/leaflet/images/volcanomarker.png'});
+var goblinMarker = new markerObj({iconUrl: 'scripts/leaflet/images/goblinmarker.png'});
 
 var armorNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/armor.png'});
 var artisanNPCMarker = new markerObj({iconUrl: 'scripts/leaflet/images/Shops/artisan.png'});
@@ -220,8 +227,8 @@ var questNormal = new markerObj({iconUrl: 'scripts/leaflet/images/quest_normal.p
 var questHard = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hard.png'})
 var questHardcore = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hardcore.png'})
 
-var volcano = L.marker([-1.309744, -79.982598], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97').addTo(map)
-
+var volcano = L.marker([-1.777002, -79.562988], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97').addTo(map)
+var volcano = L.marker([1.825847, -3.295898], {icon: goblinMarker}).bindPopup('<b>Inside Goblin Hollow</b><br><br><b>Mining</b><br>Cobalt Ore (43) - Requires Goblin Hollows Tier II<br><b>Farming</b><br>Brumblebulb (18)<br>Buglewart (30)<br>Mandrake (55)<br><b>Fishing</b><br>Perch (25)<br>Pike (35)<br>Grubler (56 Fishing - 56 Strength)').addTo(map)
 // Fishing Icons //
 var wellIcon = new markerObj({iconUrl: 'scripts/leaflet/images/fishing/wellicon.png'});
 var sardineIcon = new markerObj({iconUrl: 'scripts/leaflet/images/fishing/sardineicon.png'});
@@ -311,29 +318,30 @@ var spruceIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/spr
 var willowIcon = new markerObj({iconUrl: 'scripts/leaflet/images/woodcutting/willow.png'});
 
 //  Quest Markers //
-var breadBaker = L.marker([-32.824211, -33.42041],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Bread Baker - Remy</font></b><br><a href="https://wiki.skyblockisles.com/Bread_Baker">Quest Guide</a>');
-var fishyFindings = L.marker([-37.805444, -6.28418],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Fishy Findings - Fred</font></b><br><a href="https://wiki.skyblockisles.com/Fishy_Findings">Quest Guide</a>');
-var lostKitty = L.marker([-31.372399, -15.754395],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Lost Kitty - Billy</font></b><br><a href="https://wiki.skyblockisles.com/Lost_Kitty">Quest Guide</a>');
-var tourGuide = L.marker([-37.788081, -5.097656],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Tour Guide - Grandpa</font></b><br><a href="https://wiki.skyblockisles.com/Tour_Guide">Quest Guide</a>');
+var breadBaker = L.marker([questLocations.RemyX, questLocations.RemyY],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Bread Baker - Remy</font></b>');
+var fishyFindings = L.marker([questLocations.FredX, questLocations.FredY],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Fishy Findings - Fred</font></b>');
+var lostKitty = L.marker([questLocations.BillyX, questLocations.BillyY],{icon: questPeaceful}).bindPopup('<b><font color = "00CC00">Lost Kitty - Billy</font></b>');
 
-var batControl = L.marker([-17.266728, -23.027344],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Bat Control - Thulbar</font></b><br><a href="https://wiki.skyblockisles.com/Bat_Control">Quest Guide</a>');
-var magicCompost = L.marker([-33.523079, -23.664551],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Magic Compost - Gregory</font></b><br><a href="https://wiki.skyblockisles.com/Magic_Compost">Quest Guide</a>');
-var prankWarsPt1 = L.marker([-19.890723, 39.484863],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Prank Wars Pt. 1 - Winston</font></b><br><a href="https://wiki.skyblockisles.com/Prank_Wars_Pt._1">Quest Guide</a>');
-var sandwichArtist = L.marker([-38.065392, -7.382813],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Sandwich Artist - Faye</font></b><br><a href="https://wiki.skyblockisles.com/Sandwich_Artist">Quest Guide</a>');
-var wizardTower = L.marker([-11.609193, 23.620605],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Wizard Tower - Atlas</font></b><br><a href="https://wiki.skyblockisles.com/Wizard_Tower">Quest Guide</a>');
+var batControl = L.marker([-questLocations.ThulbarX, questLocations.ThulbarY],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Bat Control - Thulbar</font></b>');
+var magicCompost = L.marker([questLocations.GregoryX, questLocations.GregoryY],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Magic Compost - Gregory</font></b>');
+var prankWarsPt1 = L.marker([questLocations.WinstonX, questLocations.WinstonY],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">The Infested Apple - Winston</font></b>');
+var sandwichArtist = L.marker([questLocations.FayeX, questLocations.FayeY],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Sandwich Artist - Faye</font></b>');
+var wizardTower = L.marker([questLocations.AtlasX, questLocations.AtlasY],{icon: questEasy}).bindPopup('<b><font color = "FFE41E">Wizard Tower - Atlas</font></b>');
 
-var animalAmulet = L.marker([-28.748397, -18.676758],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Animal Amulet - Bob</font></b><br><a href="https://wiki.skyblockisles.com/Animal_Amulet">Quest Guide</a>');
-var beaconOfLight = L.marker([2.701635, 25.598145],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Beacon Of Light - Lillybelle</font></b><br><a href="https://wiki.skyblockisles.com/Beacon_Of_Light">Quest Guide</a>');
-var sewerRat = L.marker([-31.709476, -17.006836],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Sewer Rat - Oroku</font></b><br><a href="https://wiki.skyblockisles.com/Sewer_Rat">Quest Guide</a>');
+var animalAmulet = L.marker([questLocations.BobX, questLocations.BobY],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Animal Amulet - Bob</font></b>');
+var beaconOfLight = L.marker([questLocations.LillybelleX, questLocations.LillybelleY],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Beacon Of Light - Lillybelle</font></b>');
+var sewerRat = L.marker([questLocations.OrokuX, questLocations.OrokuY],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Sewer Rat - Oroku</font></b>');
 
-var ancientSeal = L.marker([-9.470736, -77.431641],{icon: questHard}).bindPopup('<b><font color = "FF0000">Ancient Seal - Pyre Door</font></b><br><a href="https://wiki.skyblockisles.com/Ancient Seal">Quest Guide</a>');
-var giantFeast = L.marker([-3.00887, 68.642578],{icon: questHard}).bindPopup('<b><font color = "FF0000">Giant Feast - Rholdal</font></b><br><a href="https://wiki.skyblockisles.com/Giant_Feast">Quest Guide</a>');
-var jormunRock = L.marker([10.941192, 38.71582],{icon: questHard}).bindPopup('<b><font color = "FF0000">Jormun Rock - Jarl</font></b><br><a href="https://wiki.skyblockisles.com/Jormun_Rock">Quest Guide</a>');
+var ancientSeal = L.marker([questLocations.PyreDoorX, questLocations.PyreDoorY],{icon: questHard}).bindPopup('<b><font color = "FF0000">Ancient Seal - Pyre Door</font></b>');
+var giantFeast = L.marker([questLocations.GiantFeastX, questLocations.GiantFeastY],{icon: questHard}).bindPopup('<b><font color = "FF0000">Giant Feast - Rholdal</font></b>');
+var jormunRock = L.marker([questLocations.JarlX, questLocations.JarlY],{icon: questHard}).bindPopup('<b><font color = "FF0000">Jormun Rock - Jarl</font></b>');
+var monkeyMask = L.marker([questLocations.MonkeyMaskX, questLocations.MonkeyMaskY],{icon: questHard}).bindPopup('<b><font color = "FF0000">Monkey Mask - Princess Awaiga</font></b>');
+var goblinHollows = L.marker([questLocations.GoblinHollowsX, questLocations.GoblinHollowsY],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Goblin Hollows - Wyrm</font></b>');
+var paperPlane = L.marker([questLocations.PaperPlaneX, questLocations.PaperPlaneY],{icon: questNormal}).bindPopup('<b><font color = "FF7700">Paper Plane - Gyro</font></b>');
 
 var peacefulMarkers = L.layerGroup([breadBaker,
 	fishyFindings,
-	lostKitty,
-	tourGuide]);
+	lostKitty]);
 
 var easyMarkers = L.layerGroup([batControl,
 	magicCompost,
@@ -343,11 +351,14 @@ var easyMarkers = L.layerGroup([batControl,
 
 var normalMarkers = L.layerGroup([animalAmulet,
 	beaconOfLight,
-	sewerRat]);
+	sewerRat,
+	goblinHollows,
+	paperPlane]);
 
 var hardMarkers = L.layerGroup([ancientSeal,
 	giantFeast,
-	jormunRock]);
+	jormunRock,
+	monkeyMask]);
 
 //                //
 // Fishing Markers//
@@ -420,37 +431,45 @@ var altarSpots = L.layerGroup([cosmicAltar,
 //                //
 // Mining Markers //
 //                //
-var pyreFumaroleMining = L.marker([-7.873868, -71.369316], {icon: oresNPCMarker}).bindPopup('<b>Pyre Fumarole</b><br>Coal Ore (12)<br>Crimson Ore (50)')
+var pyreFumaroleMining = L.marker([miningLocations.FumaroleX, miningLocations.FumaroleY], {icon: oresNPCMarker}).bindPopup('<b>Pyre Fumarole</b><br>Coal (12)<br>Crimson Ore (50)')
+var dwarvenMining = L.marker([miningLocations.DwarfX, miningLocations.DwarfY], {icon: oresNPCMarker}).bindPopup('<b>Dwarven Mine</b><br>Tin Ore (1)<br>Copper Ore (1)<br>Iron Ore (5)<br>Coal (12)<br>Mithril Ore (30)')
+var clayMining = L.marker([miningLocations.ClayX, miningLocations.ClayY], {icon: oresNPCMarker}).bindPopup('<b>Clay Quarry</b><br>Tin Ore (1)<br>Copper Ore (1)<br>Clay (3)<br>Salt (23) - Requires Flippers')
+var viridianMining = L.marker([miningLocations.ViridianX, miningLocations.ViridianY], {icon: oresNPCMarker}).bindPopup('<b>Viridian Mines</b><br>Iron Ore (5)<br>Nickle Ore (15)<br>Silver Ore (18)<br>Rhodonite Ore (20)<br>Mithril Ore (30)<br>Adamantium Ore (40)')
+var treasureMining = L.marker([miningLocations.TreasureX, miningLocations.TreasureY], {icon: oresNPCMarker}).bindPopup('<b>Treasure Trench</b><br>Tin Ore (1)<br>Copper Ore (1)<br>Iron Ore (5)<br>Silver Ore (18)<br>Rhodonite Ore (20)<br>Mithril Ore (30)<br>Gold Ore (45)<br>Crimson Ore (50)')
+var forsakenMining = L.marker([miningLocations.ForsakenX, miningLocations.ForsakenY], {icon: oresNPCMarker}).bindPopup('<b>Forsaken Mine</b><br>Tin Ore (1)<br>Copper Ore (1)<br>Iron Ore (5)<br>Silver Ore (18)<br>Nickle Ore (15)<br>Rhodonite Ore (20)<br>Mithril Ore (30)<br>Adamantium Ore (40)')
+var snjorMining = L.marker([miningLocations.SjnorX, miningLocations.SjnorY], {icon: oresNPCMarker}).bindPopup('<b>Mount Snjor</b><br>Iron Ore (5)<br>Silver Ore (18)<br>Nickle Ore (15)<br>Rhodonite Ore (20)<br>Mithril Ore (30)<br>Crimson Ore (50)<br>Ice (35)')
+var wizardMining = L.marker([miningLocations.WizardX, miningLocations.WizardY], {icon: oresNPCMarker}).bindPopup('<b>Wizard Tower</b><br>Rune Essence (10) - Requires Wizard Tower quest')
+var graniteMining = L.marker([miningLocations.GraniteX, miningLocations.GraniteY], {icon: oresNPCMarker}).bindPopup('<b>Granite Ravine</b><br>Granite Slab (37)')
+var tortugaMining = L.marker([miningLocations.TortugaX, miningLocations.TortugaY], {icon: oresNPCMarker}).bindPopup('<b>Tortuga</b><br>Gold Ore (45)<br>Cannonball (40) - Requires Tortuga Tier 1')
 
-var miningSpots = L.layerGroup([pyreFumaroleMining,
-
+var miningSpots = L.layerGroup([pyreFumaroleMining, dwarvenMining, clayMining, viridianMining, treasureMining, forsakenMining, snjorMining, wizardMining, graniteMining, tortugaMining
 	])
 
 //                //
 //Farming Markers //
 //                //
-var wheat1 = L.marker([-28.863918, -30.146484], {icon: wheatIcon}).bindPopup('<b>Wheat - Scythe (1)</b>'),
-    lettuce1 = L.marker([-32.713355, -23.90625], {icon: lettuceIcon}).bindPopup('<b>Lettuce - Scythe (3)</b>'),
-    potato1 = L.marker([-31.802893, -26.323242], {icon: potatoIcon}).bindPopup('<b>Potato - Scythe (5)</b>'),
-    flax1 = L.marker([-28.786918, -18.522949], {icon: flaxIcon}).bindPopup('<b>Flax - Gloves (12)</b>'),
-    nettleLeaf1 = L.marker([-33.541395, -25.905762], {icon: nettleleafIcon}).bindPopup('<b>Nettle Leaf - Gloves (6)</b>'),
-    tomato1 = L.marker([-33.008663, -23.005371], {icon: tomatoIcon}).bindPopup('<b>Tomato - Scythe (7)</b>'),
-    carrot1 = L.marker([-31.128199, -27.817383], {icon: carrotIcon}).bindPopup('<b>Carrot - Scythe (8)</b>'),
-    sugarcane1 = L.marker([-30.619005, -42.297363], {icon: sugarcaneIcon}).bindPopup('<b>Sugarcane - Scythe (15)</b>'),
-    cocoaBeans1 = L.marker([-16.40447, -61.567383], {icon: cocoabeansIcon}).bindPopup('<b>Cocoa Beans - Scythe (20)</b>'),
-    vikingHops1 = L.marker([8.798225, 23.928223], {icon: vikinghopsIcon}).bindPopup('<b>Viking Hops - Shears (22)</b>'),
-    beet1 = L.marker([-27.488781, -25.883789], {icon: beetIcon}).bindPopup('<b>Beet - Scythe (22)</b>'),
-    corn1 = L.marker([-27.15692, -42.824707], {icon: cornIcon}).bindPopup('<b>Corn - Scythe (28)</b>'),
-    garlic1 = L.marker([-13.432367, -76.464844], {icon: garlicIcon}).bindPopup('<b>Garlic - Scythe (32)</b>'),
-    bamboo1 = L.marker([3.754634, -47.416992], {icon: bambooIcon}).bindPopup('<b>Bamboo - Scythe (33)</b>'),
-    pyrePepper1 = L.marker([-0.109863, -78.200684], {icon: pyrepepperIcon}).bindPopup('<b>Pyer Pepper - Scythe (35)</b>'),
-    pumpkin1 = L.marker([10.444598, 27.641602], {icon: pumpkinIcon}).bindPopup('<b>Pumpkin - Scythe (35)</b>'),
-    apple1 = L.marker([-30.164126, -24.367676], {icon: appleIcon}).bindPopup('<b>Apple (1)</b>'),
-    orange1 = L.marker([-35.942436, -21.049805], {icon: orangeIcon}).bindPopup('<b>Oranges (10)</b>'),
-    banana1 = L.marker([-4.412137, -40.429688], {icon: bananaIcon}).bindPopup('<b>Banana (20)</b>'),
-    cherry1 = L.marker([-0.615223, 19.445801], {icon: cherryIcon}).bindPopup('<b>Cherry (30)</b>'),
-    blackberry1 = L.marker([-6.031311, 45.439453], {icon: blackberryIcon}).bindPopup('<b>Blackberry (35)</b>'),
-    coconut1 = L.marker([-26.49024, -46.252441], {icon: coconutIcon}).bindPopup('<b>Coconut (40)</b>');
+var wheat1 = L.marker([farmingLocations.WheatX, farmingLocations.WheatY], {icon: wheatIcon}).bindPopup('<b>Wheat - Scythe (1)</b>'),
+    lettuce1 = L.marker([farmingLocations.LettuceX, farmingLocations.LettuceY], {icon: lettuceIcon}).bindPopup('<b>Lettuce - Scythe (3)</b>'),
+    potato1 = L.marker([farmingLocations.PotatoX, farmingLocations.PotatoY], {icon: potatoIcon}).bindPopup('<b>Potato - Scythe (5)</b>'),
+    flax1 = L.marker([farmingLocations.FlaxX, farmingLocations.FlaxY], {icon: flaxIcon}).bindPopup('<b>Flax - Gloves (12)</b>'),
+    nettleLeaf1 = L.marker([farmingLocations.NettleLeafX, farmingLocations.NettleLeafY], {icon: nettleleafIcon}).bindPopup('<b>Nettle Leaf - Gloves (6)</b>'),
+    tomato1 = L.marker([farmingLocations.TomatoX, farmingLocations.TomatoY], {icon: tomatoIcon}).bindPopup('<b>Tomato - Scythe (7)</b>'),
+    carrot1 = L.marker([farmingLocations.CarrotX, farmingLocations.CarrotY], {icon: carrotIcon}).bindPopup('<b>Carrot - Scythe (8)</b>'),
+    sugarcane1 = L.marker([farmingLocations.SugarcaneX, farmingLocations.SugarcaneY], {icon: sugarcaneIcon}).bindPopup('<b>Sugarcane - Scythe (15)</b>'),
+    cocoaBeans1 = L.marker([farmingLocations.CocoaBeansX, farmingLocations.CocoaBeansY], {icon: cocoabeansIcon}).bindPopup('<b>Cocoa Beans - Scythe (20)</b>'),
+    vikingHops1 = L.marker([farmingLocations.VikingHopsX, farmingLocations.VikingHopsY], {icon: vikinghopsIcon}).bindPopup('<b>Viking Hops - Shears (22)</b>'),
+    beet1 = L.marker([farmingLocations.BeetX, farmingLocations.BeetY], {icon: beetIcon}).bindPopup('<b>Beet - Scythe (22)</b>'),
+    corn1 = L.marker([farmingLocations.CornX, farmingLocations.CornY], {icon: cornIcon}).bindPopup('<b>Corn - Scythe (28)</b>'),
+    garlic1 = L.marker([farmingLocations.GarlicX, farmingLocations.GarlicY], {icon: garlicIcon}).bindPopup('<b>Garlic - Scythe (32)</b>'),
+    bamboo1 = L.marker([farmingLocations.BambooX, farmingLocations.BambooY], {icon: bambooIcon}).bindPopup('<b>Bamboo - Scythe (33)</b>'),
+    pyrePepper1 = L.marker([farmingLocations.PyrePepperX, farmingLocations.PyrePepperY], {icon: pyrepepperIcon}).bindPopup('<b>Pyer Pepper - Scythe (35)</b>'),
+    pumpkin1 = L.marker([farmingLocations.PumpkinX, farmingLocations.PumpkinY], {icon: pumpkinIcon}).bindPopup('<b>Pumpkin - Scythe (35)</b>'),
+    apple1 = L.marker([farmingLocations.AppleX, farmingLocations.AppleY], {icon: appleIcon}).bindPopup('<b>Apple (1)</b>'),
+    orange1 = L.marker([farmingLocations.OrangeX, farmingLocations.OrangeY], {icon: orangeIcon}).bindPopup('<b>Oranges (10)</b>'),
+    banana1 = L.marker([farmingLocations.BananaX, farmingLocations.BananaY], {icon: bananaIcon}).bindPopup('<b>Banana (20)</b>'),
+    cherry1 = L.marker([farmingLocations.CherryX, farmingLocations.CherryY], {icon: cherryIcon}).bindPopup('<b>Cherry (30)</b>'),
+    blackberry1 = L.marker([farmingLocations.BlackberryX, farmingLocations.BlackberryY], {icon: blackberryIcon}).bindPopup('<b>Blackberry (35)</b>'),
+    coconut1 = L.marker([farmingLocations.CoconutX, farmingLocations.CoconutY], {icon: coconutIcon}).bindPopup('<b>Coconut (40)</b>');
 
 var farmingSpots = L.layerGroup([wheat1,
 	lettuce1,
@@ -480,16 +499,16 @@ var farmingSpots = L.layerGroup([wheat1,
 //Woodcutting Markers //
 //                    //
 
-var log1 = L.marker([-35.835628, -11.733398], {icon: logIcon}).bindPopup('<b>Log (1)</b>'),
-	birch1 = L.marker([-34.795762, -13.183594], {icon: birchIcon}).bindPopup('<b>Birch (10)</b>'),
-	oak1 = L.marker([-35.119909, -9.404297], {icon: oakIcon}).bindPopup('<b>Oak (5)</b>'),
-	spruce1 = L.marker([-37.107765, -9.338379], {icon: spruceIcon}).bindPopup('<b>Spruce (15)</b>'),
-	willow1 = L.marker([-21.412162, -31.948242], {icon: willowIcon}).bindPopup('<b>Willow (20)</b>'),
-	acacia1 = L.marker([-17.266728, -32.629395], {icon: acaciaIcon}).bindPopup('<b>Acacia (30)</b>'),
-	dreadknot1 = L.marker([11.070603, -46.494141], {icon: dreadknotIcon}).bindPopup('<b>Dreadknot (35)</b>'),
-	mahogany1 = L.marker([22.004175, -1.40625], {icon: mahoganyIcon}).bindPopup('<b>Mahogany (35)</b>'),
-	baobab1 = L.marker([5.266008, -67.478027], {icon: baobabIcon}).bindPopup('<b>Baobab (50)</b>'),
-	bedlam1 = L.marker([41.211722, 21.313477], {icon: bedlamIcon}).bindPopup('<b>Bedlam (60)</b>')
+var log1 = L.marker([woodcuttingLocations.LogX, woodcuttingLocations.LogY], {icon: logIcon}).bindPopup('<b>Log (1)</b>'),
+	birch1 = L.marker([woodcuttingLocations.BirchX, woodcuttingLocations.BirchY], {icon: birchIcon}).bindPopup('<b>Birch (10)</b>'),
+	oak1 = L.marker([woodcuttingLocations.OakX, woodcuttingLocations.OakY], {icon: oakIcon}).bindPopup('<b>Oak (5)</b>'),
+	spruce1 = L.marker([woodcuttingLocations.SpruceX, woodcuttingLocations.SpruceY], {icon: spruceIcon}).bindPopup('<b>Spruce (15)</b>'),
+	willow1 = L.marker([woodcuttingLocations.WillowX, woodcuttingLocations.WillowY], {icon: willowIcon}).bindPopup('<b>Willow (20)</b>'),
+	acacia1 = L.marker([woodcuttingLocations.AcaciaX, woodcuttingLocations.AcaciaY], {icon: acaciaIcon}).bindPopup('<b>Acacia (30)</b>'),
+	dreadknot1 = L.marker([woodcuttingLocations.DreadknotX, woodcuttingLocations.DreadknotY], {icon: dreadknotIcon}).bindPopup('<b>Dreadknot (35)</b>'),
+	mahogany1 = L.marker([woodcuttingLocations.MahoganyX, woodcuttingLocations.MahoganyY], {icon: mahoganyIcon}).bindPopup('<b>Mahogany (35)</b>'),
+	baobab1 = L.marker([woodcuttingLocations.BaobabX, woodcuttingLocations.BaobabY], {icon: baobabIcon}).bindPopup('<b>Baobab (50)</b>'),
+	bedlam1 = L.marker([woodcuttingLocations.BedlamX, woodcuttingLocations.BedlamY], {icon: bedlamIcon}).bindPopup('<b>Bedlam (60)</b>')
 
 //                    //
 //  NPC Shops Markers  //
@@ -1123,6 +1142,142 @@ function togglePyreFumarole()
 		pyreFumaroleMining.addTo(map);
 	}
 }
+
+function toggleDwarven()
+{
+	var dwarvenB = document.getElementById("dwarvenButton")
+	if(map.hasLayer(dwarvenMining))
+	{
+		dwarvenB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(dwarvenMining)
+	}
+	else
+	{
+		dwarvenB.style.backgroundColor = 'rgb(187, 134, 245)';
+		dwarvenMining.addTo(map);
+	}
+}
+
+function toggleClayQuarry()
+{
+	var clayB = document.getElementById("clayButton")
+	if(map.hasLayer(clayMining))
+	{
+		clayB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(clayMining)
+	}
+	else
+	{
+		clayB.style.backgroundColor = 'rgb(187, 134, 245)';
+		clayMining.addTo(map);
+	}
+}
+
+function toggleViridian()
+{
+	var viridianB = document.getElementById("viridianButton")
+	if(map.hasLayer(viridianMining))
+	{
+		viridianB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(viridianMining)
+	}
+	else
+	{
+		viridianB.style.backgroundColor = 'rgb(187, 134, 245)';
+		viridianMining.addTo(map);
+	}
+}
+
+function toggleTreasure()
+{
+	var treasureB = document.getElementById("treasureButton")
+	if(map.hasLayer(treasureMining))
+	{
+		treasureB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(treasureMining)
+	}
+	else
+	{
+		treasureB.style.backgroundColor = 'rgb(187, 134, 245)';
+		treasureMining.addTo(map);
+	}
+}
+
+function toggleForsaken()
+{
+	var forsakenB = document.getElementById("forsakenButton")
+	if(map.hasLayer(forsakenMining))
+	{
+		forsakenB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(forsakenMining)
+	}
+	else
+	{
+		forsakenB.style.backgroundColor = 'rgb(187, 134, 245)';
+		forsakenMining.addTo(map);
+	}
+}
+
+function toggleSnjor()
+{
+	var snjorB = document.getElementById("sjnorButton")
+	if(map.hasLayer(snjorMining))
+	{
+		snjorB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(snjorMining)
+	}
+	else
+	{
+		snjorB.style.backgroundColor = 'rgb(187, 134, 245)';
+		snjorMining.addTo(map);
+	}
+}
+
+function toggleWizard()
+{
+	var wizardB = document.getElementById("wizardButton")
+	if(map.hasLayer(wizardMining))
+	{
+		wizardB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(wizardMining)
+	}
+	else
+	{
+		wizardB.style.backgroundColor = 'rgb(187, 134, 245)';
+		wizardMining.addTo(map);
+	}
+}
+
+function toggleGranite()
+{
+	var graniteB = document.getElementById("graniteButton")
+	if(map.hasLayer(graniteMining))
+	{
+		graniteB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(graniteMining)
+	}
+	else
+	{
+		graniteB.style.backgroundColor = 'rgb(187, 134, 245)';
+		graniteMining.addTo(map);
+	}
+}
+
+function toggleTortuga()
+{
+	var tortugaB = document.getElementById("tortugaButton")
+	if(map.hasLayer(tortugaMining))
+	{
+		tortugaB.style.backgroundColor = 'rgb(41, 41, 41)';
+		map.removeLayer(tortugaMining)
+	}
+	else
+	{
+		tortugaB.style.backgroundColor = 'rgb(187, 134, 245)';
+		tortugaMining.addTo(map);
+	}
+}
+
 
 function toggleLog()
 {
@@ -2170,6 +2325,14 @@ function toggleLocationMarkers()
 		else
 			marker.addTo(map);
 	}
+}
+
+function toggleCredits()
+{
+	if (!map.hasLayer(L.control.textbox1))
+		L.control.textbox1.addTo(map)
+	else
+		L.control.textbox1.removeFrom(map);
 }
 
 map.on('click', function(e) {

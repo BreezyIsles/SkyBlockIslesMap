@@ -1,8 +1,8 @@
-.leafletwoodcutting-control-slide{
+.leafletcredits-control-slide{
     cursor: pointer;
 }
 
-.leafletwoodcutting-menu {
+.leafletcredits-menu {
     display: flex !important;
     position: absolute;
     background-color: #121212;
@@ -14,22 +14,22 @@
     align-content: top !important;
     padding-top: 20px;
     color: white;
-    text-align: center !important;
+    text-align: left !important;
     font-size: 18px;
 }
 
-.leafletwoodcutting-menu::-webkit-scrollbar{
+.leafletcredits-menu::-webkit-scrollbar{
     width: 7px;
     height: 7px;
     background: #f2f2f2;
 }
 
-.leafletwoodcutting-menu::-webkit-scrollbar-thumb{
+.leafletcredits-menu::-webkit-scrollbar-thumb{
     border-radius: 2px;
     background: #777;   
 }
 
-.leafletwoodcutting-menu-close-button{
+.leafletcredits-menu-close-button{
     background-color: transparent;
     border: none;
     font-size: 14pt;
@@ -37,9 +37,8 @@
     cursor: pointer;
     padding-left: 10px !important;
     padding-right: 13px !important;
-	background-image: "/scripts/leaflet/images/miningIcon.png"
 }
 
-.leafletwoodcutting-menu-close-button:hover{
+.leafletcredits-menu-close-button:hover{
     color: #9c4dff;
 }

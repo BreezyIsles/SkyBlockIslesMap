@@ -946,6 +946,204 @@
     cursor: pointer;
 }
 
+#dwarvenButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#dwarvenButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#clayButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#clayButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#viridianButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#viridianButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#treasureButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#treasureButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#forsakenButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#forsakenButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#sjnorButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#sjnorButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#wizardButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#wizardButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#graniteButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#graniteButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#tortugaButton{
+    display: inherit;
+    align-items: center;
+    margin-top: 5px;
+    top: 220px;
+    left: 150px;
+    width: 131px;
+    height: 25px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: white;
+    text-align: center;
+    z-index: 500;
+}
+#tortugaButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #logButton{
     display: inherit;
     align-items: center;

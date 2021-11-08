@@ -2314,14 +2314,9 @@ function toggleCoconut()
 	}
 }
 
-function toggleLocationMarkers()
-{
-	for (let marker of locationMarkers)
+for (let marker of locationMarkers)
 	{
-		if (map.hasLayer(marker))
-			marker.removeFrom(map);
-		else
-			marker.addTo(map);
+		marker.addTo(map);
 	}
 }
 

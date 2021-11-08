@@ -172,6 +172,8 @@ L.tileLayer('https://map.skyblockisles.com/tiles/{z}/{x}/{y}.jpg', {
   continuousWorld: false,
   noWrap: true,
 }).addTo(map);
+	
+map.setZoom(4);
 
 // Create the marker object
 var markerObj = L.Icon.extend({

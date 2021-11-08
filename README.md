@@ -3,5 +3,5 @@
 <p><strong>Open-source map of the first Skyblock Isle - Created by Breezy#0999</strong></p>
 <p>Credits:<br>Breezy#0999 - Map creation, image, locations<br>GaminLogan#8047 - Locations<br>SkyBorn#0561 - Locations<br>ethoSSS#9090 - Locations<br>Karluu#6666 - NPC shop locations</p> 
 
-Skyblock Isles Discord:
+Skyblock Isles Discord: 
 <a href="http://discord.gg/isles">http://discord.gg/isles</a>

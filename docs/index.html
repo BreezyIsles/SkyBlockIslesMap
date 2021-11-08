@@ -225,8 +225,10 @@ var questNormal = new markerObj({iconUrl: 'scripts/leaflet/images/quest_normal.p
 var questHard = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hard.png'})
 var questHardcore = new markerObj({iconUrl: 'scripts/leaflet/images/quest_hardcore.png'})
 
-var volcano = L.marker([-1.777002, -79.562988], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97').addTo(map)
-var volcano = L.marker([1.825847, -3.295898], {icon: goblinMarker}).bindPopup('<b>Inside Goblin Hollow</b><br><br><b>Mining</b><br>Cobalt Ore (43) - Requires Goblin Hollows Tier II<br><b>Farming</b><br>Brumblebulb (18)<br>Buglewart (30)<br>Mandrake (55)<br><b>Fishing</b><br>Perch (25)<br>Pike (35)<br>Grubler (56 Fishing - 56 Strength)').addTo(map)
+var volcano = L.marker([-1.777002, -79.562988], {icon: volcanoMarker}).bindPopup('<b>Inside the Volcano</b><br><br><b>Alchemy</b><br>Fire Altar (12) : -93, 64, 79<br><b>Farming</b><br>Volcanic Hops (50) : 107, 50, -42<br>Nether Wart (70) : -103, 59, -83<br><b>Mining</b><br>Obsidian (55) : 129, 52, 79<br>Netherite (55) : 6, 71, -105<br><b>Woodcutting:</b><br>Demon Wood (70) : -66, 66, 95<br><b>Fishing:</b><br>Lava Eel (52 - Magma Spear) : -41, 61, 97')
+var goblin = L.marker([1.825847, -3.295898], {icon: goblinMarker}).bindPopup('<b>Inside Goblin Hollow</b><br><br><b>Mining</b><br>Cobalt Ore (43) - Requires Goblin Hollows Tier II<br><b>Farming</b><br>Brumblebulb (18)<br>Buglewart (30)<br>Mandrake (55)<br><b>Fishing</b><br>Perch (25)<br>Pike (35)<br>Grubler (56 Fishing - 56 Strength)')
+
+var insideLocations = L.layerGroup([volcano, goblin]);
 // Fishing Icons //
 var wellIcon = new markerObj({iconUrl: 'scripts/leaflet/images/fishing/wellicon.png'});
 var sardineIcon = new markerObj({iconUrl: 'scripts/leaflet/images/fishing/sardineicon.png'});
@@ -582,7 +584,7 @@ var azanore1 = L.marker([-14.285677, -81.914063], {icon: fishingNPCMarker}).bind
 //Ores
 var muldrio1 = L.marker([-13.923404, -56.755371], {icon: oresNPCMarker}).bindPopup('<b><u>Muldrio - Ores</u></b><br>Coal - 24c<br>Iron Ore - 19c<br>Nickel Ore - 32c<br>Rhodonite Ore - 150c<br>Mithril Ore - 625c<br>Adamantium Ore - 2275c<br>Crimson Ore - 3600c')
 
-var locationMarkers = [
+var locations = [
 	(new L.marker([ locationNames.TortugaX,  locationNames.TortugaY], { opacity: 0.0 })).bindTooltip("Tortuga",        { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 45] }),
 	(new L.marker([ locationNames.MountSnjorX,  locationNames.MountSnjorY], { opacity: 0.0 })).bindTooltip("Mount Snjór",    { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 45] }),
 	(new L.marker([ locationNames.TreasureTrenchX, locationNames.TreasureTrenchY], { opacity: 0.0 })).bindTooltip("Treasure Trench", { direction: 'top', permanent: true, className: "location-marker", offset: [-14, 45] }),
@@ -2314,11 +2316,10 @@ function toggleCoconut()
 	}
 }
 
-for (let marker of locationMarkers)
+for (let marker of locations)
 	{
 		marker.addTo(map);
 	}
-}
 
 function toggleCredits()
 {
@@ -2326,6 +2327,18 @@ function toggleCredits()
 		L.control.textbox1.addTo(map)
 	else
 		L.control.textbox1.removeFrom(map);
+}
+	
+function toggleLocationMarkers()
+{
+	if(map.hasLayer(insideLocations))
+	{
+		map.removeLayer(insideLocations);
+	}
+	else
+	{
+		insideLocations.addTo(map);
+	}
 }
 /*
 map.on('click', function(e) {

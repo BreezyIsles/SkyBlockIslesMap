@@ -43,7 +43,6 @@
 
 <div id="map" style="width: 100%; height: 100%; background: #010101;"></div>
 
-<div id="logoContainer"><img src = "maplogo.png" id = "image"></div>
 <script src = "locationNames.js"></script>
 <script src = "fishingLocations.js"></script>
 <script src = "alchemyLocations.js"></script>
@@ -57,9 +56,6 @@
 var map = L.map('map').setView([0, 0], 1);
 
 var mapControlsContainer = document.getElementsByClassName("leaflet-control")[0];
-var logoContainer = document.getElementById("logoContainer");
-
-mapControlsContainer.appendChild(logoContainer);
 
 L.Control.textbox1 = L.Control.extend({
 		onAdd: function(map) {

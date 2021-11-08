@@ -50,6 +50,7 @@
 <script src = "woodcuttingLocations.js"></script>
 <script src = "farmingLocations.js"></script>
 <script src = "questLocations.js"></script>
+<script src = "konami.js"></script>
 <script type="text/javascript">
 
 // Declare Map Object
@@ -2345,6 +2346,9 @@ map.on('click', function(e) {
     alert(e.latlng);
 });
 */
+	
+var easter_egg = new Konami(function() { alert('You found the secret code :) say hi to Breezy')});
+	
 </script>
 
 </body>
